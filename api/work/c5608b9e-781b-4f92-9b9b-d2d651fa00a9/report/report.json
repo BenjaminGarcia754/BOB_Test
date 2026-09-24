@@ -1,0 +1,4807 @@
+{
+  "analysisId": "ad2eac26-de3f-4b43-a15f-7ae70e8dc6c4",
+  "origin": "source-repository",
+  "generatedAt": "2026-09-24T23:37:10.328Z",
+  "input": {
+    "name": "expressjs/express",
+    "sha256": null,
+    "commit": "9a34acf03cb818ff3f8bc40e44176e277a25cbb9",
+    "url": "https://github.com/expressjs/express"
+  },
+  "tools": [
+    {
+      "name": "inventory",
+      "version": null,
+      "status": "completed",
+      "dataDate": null,
+      "warning": null
+    },
+    {
+      "name": "semgrep",
+      "version": null,
+      "status": "completed",
+      "dataDate": null,
+      "warning": null
+    },
+    {
+      "name": "trivy",
+      "version": null,
+      "status": "failed",
+      "dataDate": null,
+      "warning": "trivy: not installed or scan failed"
+    }
+  ],
+  "observations": [
+    {
+      "id": "obs-001",
+      "kind": "file",
+      "summary": "File: .editorconfig",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": ".editorconfig",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-002",
+      "kind": "file",
+      "summary": "File: .eslintignore",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": ".eslintignore",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-003",
+      "kind": "file",
+      "summary": "File: .eslintrc.yml",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": ".eslintrc.yml",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-004",
+      "kind": "file",
+      "summary": "File: .github/dependabot.yml",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": ".github/dependabot.yml",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-005",
+      "kind": "file",
+      "summary": "File: .github/workflows/ci.yml",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": ".github/workflows/ci.yml",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-006",
+      "kind": "file",
+      "summary": "File: .github/workflows/codeql.yml",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": ".github/workflows/codeql.yml",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-007",
+      "kind": "file",
+      "summary": "File: .github/workflows/legacy.yml",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": ".github/workflows/legacy.yml",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-008",
+      "kind": "file",
+      "summary": "File: .github/workflows/npm-publish.yml",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": ".github/workflows/npm-publish.yml",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-009",
+      "kind": "file",
+      "summary": "File: .github/workflows/scorecard.yml",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": ".github/workflows/scorecard.yml",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-010",
+      "kind": "file",
+      "summary": "File: .gitignore",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": ".gitignore",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-011",
+      "kind": "file",
+      "summary": "File: .npmrc",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": ".npmrc",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-012",
+      "kind": "file",
+      "summary": "File: examples/auth/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/auth/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-013",
+      "kind": "file",
+      "summary": "File: examples/auth/views/foot.ejs",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/auth/views/foot.ejs",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-014",
+      "kind": "file",
+      "summary": "File: examples/auth/views/head.ejs",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/auth/views/head.ejs",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-015",
+      "kind": "file",
+      "summary": "File: examples/auth/views/login.ejs",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/auth/views/login.ejs",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-016",
+      "kind": "file",
+      "summary": "File: examples/content-negotiation/db.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/content-negotiation/db.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-017",
+      "kind": "file",
+      "summary": "File: examples/content-negotiation/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/content-negotiation/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-018",
+      "kind": "file",
+      "summary": "File: examples/content-negotiation/users.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/content-negotiation/users.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-019",
+      "kind": "file",
+      "summary": "File: examples/cookie-sessions/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/cookie-sessions/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-020",
+      "kind": "file",
+      "summary": "File: examples/cookies/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/cookies/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-021",
+      "kind": "file",
+      "summary": "File: examples/downloads/files/amazing.txt",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/downloads/files/amazing.txt",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-022",
+      "kind": "file",
+      "summary": "File: examples/downloads/files/CCTV大赛上海分赛区.txt",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/downloads/files/CCTV大赛上海分赛区.txt",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-023",
+      "kind": "file",
+      "summary": "File: examples/downloads/files/notes/groceries.txt",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/downloads/files/notes/groceries.txt",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-024",
+      "kind": "file",
+      "summary": "File: examples/downloads/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/downloads/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-025",
+      "kind": "file",
+      "summary": "File: examples/ejs/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/ejs/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-026",
+      "kind": "file",
+      "summary": "File: examples/ejs/public/stylesheets/style.css",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/ejs/public/stylesheets/style.css",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-027",
+      "kind": "file",
+      "summary": "File: examples/ejs/views/footer.html",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/ejs/views/footer.html",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-028",
+      "kind": "file",
+      "summary": "File: examples/ejs/views/header.html",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/ejs/views/header.html",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-029",
+      "kind": "file",
+      "summary": "File: examples/ejs/views/users.html",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/ejs/views/users.html",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-030",
+      "kind": "file",
+      "summary": "File: examples/error/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/error/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-031",
+      "kind": "file",
+      "summary": "File: examples/error-pages/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/error-pages/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-032",
+      "kind": "file",
+      "summary": "File: examples/error-pages/views/404.ejs",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/error-pages/views/404.ejs",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-033",
+      "kind": "file",
+      "summary": "File: examples/error-pages/views/500.ejs",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/error-pages/views/500.ejs",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-034",
+      "kind": "file",
+      "summary": "File: examples/error-pages/views/error_header.ejs",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/error-pages/views/error_header.ejs",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-035",
+      "kind": "file",
+      "summary": "File: examples/error-pages/views/footer.ejs",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/error-pages/views/footer.ejs",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-036",
+      "kind": "file",
+      "summary": "File: examples/error-pages/views/index.ejs",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/error-pages/views/index.ejs",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-037",
+      "kind": "file",
+      "summary": "File: examples/hello-world/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/hello-world/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-038",
+      "kind": "file",
+      "summary": "File: examples/markdown/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/markdown/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-039",
+      "kind": "file",
+      "summary": "File: examples/markdown/views/index.md",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/markdown/views/index.md",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-040",
+      "kind": "file",
+      "summary": "File: examples/multi-router/controllers/api_v1.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/multi-router/controllers/api_v1.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-041",
+      "kind": "file",
+      "summary": "File: examples/multi-router/controllers/api_v2.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/multi-router/controllers/api_v2.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-042",
+      "kind": "file",
+      "summary": "File: examples/multi-router/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/multi-router/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-043",
+      "kind": "file",
+      "summary": "File: examples/mvc/controllers/main/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/mvc/controllers/main/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-044",
+      "kind": "file",
+      "summary": "File: examples/mvc/controllers/pet/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/mvc/controllers/pet/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-045",
+      "kind": "file",
+      "summary": "File: examples/mvc/controllers/pet/views/edit.ejs",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/mvc/controllers/pet/views/edit.ejs",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-046",
+      "kind": "file",
+      "summary": "File: examples/mvc/controllers/pet/views/show.ejs",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/mvc/controllers/pet/views/show.ejs",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-047",
+      "kind": "file",
+      "summary": "File: examples/mvc/controllers/user/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/mvc/controllers/user/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-048",
+      "kind": "file",
+      "summary": "File: examples/mvc/controllers/user/views/edit.hbs",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/mvc/controllers/user/views/edit.hbs",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-049",
+      "kind": "file",
+      "summary": "File: examples/mvc/controllers/user/views/list.hbs",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/mvc/controllers/user/views/list.hbs",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-050",
+      "kind": "file",
+      "summary": "File: examples/mvc/controllers/user/views/show.hbs",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/mvc/controllers/user/views/show.hbs",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-051",
+      "kind": "file",
+      "summary": "File: examples/mvc/controllers/user-pet/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/mvc/controllers/user-pet/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-052",
+      "kind": "file",
+      "summary": "File: examples/mvc/db.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/mvc/db.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-053",
+      "kind": "file",
+      "summary": "File: examples/mvc/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/mvc/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-054",
+      "kind": "file",
+      "summary": "File: examples/mvc/lib/boot.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/mvc/lib/boot.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-055",
+      "kind": "file",
+      "summary": "File: examples/mvc/public/style.css",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/mvc/public/style.css",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-056",
+      "kind": "file",
+      "summary": "File: examples/mvc/views/404.ejs",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/mvc/views/404.ejs",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-057",
+      "kind": "file",
+      "summary": "File: examples/mvc/views/5xx.ejs",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/mvc/views/5xx.ejs",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-058",
+      "kind": "file",
+      "summary": "File: examples/online/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/online/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-059",
+      "kind": "file",
+      "summary": "File: examples/params/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/params/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-060",
+      "kind": "file",
+      "summary": "File: examples/README.md",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/README.md",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-061",
+      "kind": "file",
+      "summary": "File: examples/resource/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/resource/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-062",
+      "kind": "file",
+      "summary": "File: examples/route-map/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/route-map/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-063",
+      "kind": "file",
+      "summary": "File: examples/route-middleware/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/route-middleware/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-064",
+      "kind": "file",
+      "summary": "File: examples/route-separation/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/route-separation/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-065",
+      "kind": "file",
+      "summary": "File: examples/route-separation/post.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/route-separation/post.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-066",
+      "kind": "file",
+      "summary": "File: examples/route-separation/public/style.css",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/route-separation/public/style.css",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-067",
+      "kind": "file",
+      "summary": "File: examples/route-separation/site.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/route-separation/site.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-068",
+      "kind": "file",
+      "summary": "File: examples/route-separation/user.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/route-separation/user.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-069",
+      "kind": "file",
+      "summary": "File: examples/route-separation/views/footer.ejs",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/route-separation/views/footer.ejs",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-070",
+      "kind": "file",
+      "summary": "File: examples/route-separation/views/header.ejs",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/route-separation/views/header.ejs",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-071",
+      "kind": "file",
+      "summary": "File: examples/route-separation/views/index.ejs",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/route-separation/views/index.ejs",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-072",
+      "kind": "file",
+      "summary": "File: examples/route-separation/views/posts/index.ejs",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/route-separation/views/posts/index.ejs",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-073",
+      "kind": "file",
+      "summary": "File: examples/route-separation/views/users/edit.ejs",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/route-separation/views/users/edit.ejs",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-074",
+      "kind": "file",
+      "summary": "File: examples/route-separation/views/users/index.ejs",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/route-separation/views/users/index.ejs",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-075",
+      "kind": "file",
+      "summary": "File: examples/route-separation/views/users/view.ejs",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/route-separation/views/users/view.ejs",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-076",
+      "kind": "file",
+      "summary": "File: examples/search/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/search/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-077",
+      "kind": "file",
+      "summary": "File: examples/search/public/client.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/search/public/client.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-078",
+      "kind": "file",
+      "summary": "File: examples/search/public/index.html",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/search/public/index.html",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-079",
+      "kind": "file",
+      "summary": "File: examples/session/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/session/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-080",
+      "kind": "file",
+      "summary": "File: examples/session/redis.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/session/redis.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-081",
+      "kind": "file",
+      "summary": "File: examples/static-files/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/static-files/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-082",
+      "kind": "file",
+      "summary": "File: examples/static-files/public/css/style.css",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/static-files/public/css/style.css",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-083",
+      "kind": "file",
+      "summary": "File: examples/static-files/public/hello.txt",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/static-files/public/hello.txt",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-084",
+      "kind": "file",
+      "summary": "File: examples/static-files/public/js/app.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/static-files/public/js/app.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-085",
+      "kind": "file",
+      "summary": "File: examples/vhost/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/vhost/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-086",
+      "kind": "file",
+      "summary": "File: examples/view-constructor/github-view.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/view-constructor/github-view.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-087",
+      "kind": "file",
+      "summary": "File: examples/view-constructor/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/view-constructor/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-088",
+      "kind": "file",
+      "summary": "File: examples/view-locals/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/view-locals/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-089",
+      "kind": "file",
+      "summary": "File: examples/view-locals/user.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/view-locals/user.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-090",
+      "kind": "file",
+      "summary": "File: examples/view-locals/views/index.ejs",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/view-locals/views/index.ejs",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-091",
+      "kind": "file",
+      "summary": "File: examples/web-service/index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "examples/web-service/index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-092",
+      "kind": "file",
+      "summary": "File: History.md",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "History.md",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-093",
+      "kind": "file",
+      "summary": "File: index.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "index.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-094",
+      "kind": "file",
+      "summary": "File: lib/application.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "lib/application.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-095",
+      "kind": "file",
+      "summary": "File: lib/express.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "lib/express.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-096",
+      "kind": "file",
+      "summary": "File: lib/request.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "lib/request.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-097",
+      "kind": "file",
+      "summary": "File: lib/response.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "lib/response.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-098",
+      "kind": "file",
+      "summary": "File: lib/utils.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "lib/utils.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-099",
+      "kind": "file",
+      "summary": "File: lib/view.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "lib/view.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-100",
+      "kind": "file",
+      "summary": "File: LICENSE",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "LICENSE",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-101",
+      "kind": "file",
+      "summary": "File: package.json",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-102",
+      "kind": "file",
+      "summary": "File: Readme.md",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "Readme.md",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-103",
+      "kind": "file",
+      "summary": "File: test/acceptance/auth.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/acceptance/auth.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-104",
+      "kind": "file",
+      "summary": "File: test/acceptance/content-negotiation.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/acceptance/content-negotiation.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-105",
+      "kind": "file",
+      "summary": "File: test/acceptance/cookie-sessions.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/acceptance/cookie-sessions.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-106",
+      "kind": "file",
+      "summary": "File: test/acceptance/cookies.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/acceptance/cookies.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-107",
+      "kind": "file",
+      "summary": "File: test/acceptance/downloads.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/acceptance/downloads.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-108",
+      "kind": "file",
+      "summary": "File: test/acceptance/ejs.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/acceptance/ejs.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-109",
+      "kind": "file",
+      "summary": "File: test/acceptance/error-pages.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/acceptance/error-pages.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-110",
+      "kind": "file",
+      "summary": "File: test/acceptance/error.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/acceptance/error.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-111",
+      "kind": "file",
+      "summary": "File: test/acceptance/hello-world.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/acceptance/hello-world.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-112",
+      "kind": "file",
+      "summary": "File: test/acceptance/markdown.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/acceptance/markdown.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-113",
+      "kind": "file",
+      "summary": "File: test/acceptance/multi-router.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/acceptance/multi-router.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-114",
+      "kind": "file",
+      "summary": "File: test/acceptance/mvc.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/acceptance/mvc.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-115",
+      "kind": "file",
+      "summary": "File: test/acceptance/params.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/acceptance/params.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-116",
+      "kind": "file",
+      "summary": "File: test/acceptance/resource.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/acceptance/resource.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-117",
+      "kind": "file",
+      "summary": "File: test/acceptance/route-map.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/acceptance/route-map.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-118",
+      "kind": "file",
+      "summary": "File: test/acceptance/route-separation.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/acceptance/route-separation.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-119",
+      "kind": "file",
+      "summary": "File: test/acceptance/vhost.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/acceptance/vhost.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-120",
+      "kind": "file",
+      "summary": "File: test/acceptance/web-service.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/acceptance/web-service.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-121",
+      "kind": "file",
+      "summary": "File: test/app.all.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/app.all.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-122",
+      "kind": "file",
+      "summary": "File: test/app.engine.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/app.engine.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-123",
+      "kind": "file",
+      "summary": "File: test/app.head.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/app.head.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-124",
+      "kind": "file",
+      "summary": "File: test/app.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/app.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-125",
+      "kind": "file",
+      "summary": "File: test/app.listen.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/app.listen.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-126",
+      "kind": "file",
+      "summary": "File: test/app.locals.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/app.locals.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-127",
+      "kind": "file",
+      "summary": "File: test/app.options.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/app.options.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-128",
+      "kind": "file",
+      "summary": "File: test/app.param.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/app.param.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-129",
+      "kind": "file",
+      "summary": "File: test/app.render.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/app.render.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-130",
+      "kind": "file",
+      "summary": "File: test/app.request.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/app.request.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-131",
+      "kind": "file",
+      "summary": "File: test/app.response.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/app.response.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-132",
+      "kind": "file",
+      "summary": "File: test/app.route.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/app.route.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-133",
+      "kind": "file",
+      "summary": "File: test/app.router.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/app.router.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-134",
+      "kind": "file",
+      "summary": "File: test/app.routes.error.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/app.routes.error.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-135",
+      "kind": "file",
+      "summary": "File: test/app.use.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/app.use.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-136",
+      "kind": "file",
+      "summary": "File: test/config.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/config.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-137",
+      "kind": "file",
+      "summary": "File: test/exports.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/exports.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-138",
+      "kind": "file",
+      "summary": "File: test/express.json.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/express.json.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-139",
+      "kind": "file",
+      "summary": "File: test/express.raw.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/express.raw.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-140",
+      "kind": "file",
+      "summary": "File: test/express.static.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/express.static.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-141",
+      "kind": "file",
+      "summary": "File: test/express.text.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/express.text.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-142",
+      "kind": "file",
+      "summary": "File: test/express.urlencoded.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/express.urlencoded.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-143",
+      "kind": "file",
+      "summary": "File: test/fixtures/% of dogs.txt",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/fixtures/% of dogs.txt",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-144",
+      "kind": "file",
+      "summary": "File: test/fixtures/.name",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/fixtures/.name",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-145",
+      "kind": "file",
+      "summary": "File: test/fixtures/blog/index.html",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/fixtures/blog/index.html",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-146",
+      "kind": "file",
+      "summary": "File: test/fixtures/blog/post/index.tmpl",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/fixtures/blog/post/index.tmpl",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-147",
+      "kind": "file",
+      "summary": "File: test/fixtures/broken.send",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/fixtures/broken.send",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-148",
+      "kind": "file",
+      "summary": "File: test/fixtures/default_layout/name.tmpl",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/fixtures/default_layout/name.tmpl",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-149",
+      "kind": "file",
+      "summary": "File: test/fixtures/default_layout/user.tmpl",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/fixtures/default_layout/user.tmpl",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-150",
+      "kind": "file",
+      "summary": "File: test/fixtures/email.tmpl",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/fixtures/email.tmpl",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-151",
+      "kind": "file",
+      "summary": "File: test/fixtures/empty.txt",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/fixtures/empty.txt",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-152",
+      "kind": "file",
+      "summary": "File: test/fixtures/local_layout/user.tmpl",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/fixtures/local_layout/user.tmpl",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-153",
+      "kind": "file",
+      "summary": "File: test/fixtures/name.tmpl",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/fixtures/name.tmpl",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-154",
+      "kind": "file",
+      "summary": "File: test/fixtures/name.txt",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/fixtures/name.txt",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-155",
+      "kind": "file",
+      "summary": "File: test/fixtures/nums.txt",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/fixtures/nums.txt",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-156",
+      "kind": "file",
+      "summary": "File: test/fixtures/pets/names.txt",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/fixtures/pets/names.txt",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-157",
+      "kind": "file",
+      "summary": "File: test/fixtures/snow ☃/.gitkeep",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/fixtures/snow ☃/.gitkeep",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-158",
+      "kind": "file",
+      "summary": "File: test/fixtures/todo.html",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/fixtures/todo.html",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-159",
+      "kind": "file",
+      "summary": "File: test/fixtures/todo.txt",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/fixtures/todo.txt",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-160",
+      "kind": "file",
+      "summary": "File: test/fixtures/user.html",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/fixtures/user.html",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-161",
+      "kind": "file",
+      "summary": "File: test/fixtures/user.tmpl",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/fixtures/user.tmpl",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-162",
+      "kind": "file",
+      "summary": "File: test/fixtures/users/index.html",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/fixtures/users/index.html",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "obs-163",
+      "kind": "file",
+      "summary": "File: test/fixtures/users/tobi.txt",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/fixtures/users/tobi.txt",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": []
+    },
+    {
+      "id": "obs-164",
+      "kind": "file",
+      "summary": "File: test/middleware.basic.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/middleware.basic.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-165",
+      "kind": "file",
+      "summary": "File: test/regression.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/regression.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-166",
+      "kind": "file",
+      "summary": "File: test/req.accepts.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/req.accepts.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-167",
+      "kind": "file",
+      "summary": "File: test/req.acceptsCharsets.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/req.acceptsCharsets.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-168",
+      "kind": "file",
+      "summary": "File: test/req.acceptsEncodings.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/req.acceptsEncodings.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-169",
+      "kind": "file",
+      "summary": "File: test/req.acceptsLanguages.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/req.acceptsLanguages.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-170",
+      "kind": "file",
+      "summary": "File: test/req.baseUrl.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/req.baseUrl.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-171",
+      "kind": "file",
+      "summary": "File: test/req.fresh.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/req.fresh.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-172",
+      "kind": "file",
+      "summary": "File: test/req.get.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/req.get.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-173",
+      "kind": "file",
+      "summary": "File: test/req.host.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/req.host.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-174",
+      "kind": "file",
+      "summary": "File: test/req.hostname.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/req.hostname.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-175",
+      "kind": "file",
+      "summary": "File: test/req.ip.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/req.ip.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-176",
+      "kind": "file",
+      "summary": "File: test/req.ips.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/req.ips.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-177",
+      "kind": "file",
+      "summary": "File: test/req.is.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/req.is.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-178",
+      "kind": "file",
+      "summary": "File: test/req.path.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/req.path.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-179",
+      "kind": "file",
+      "summary": "File: test/req.protocol.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/req.protocol.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-180",
+      "kind": "file",
+      "summary": "File: test/req.query.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/req.query.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-181",
+      "kind": "file",
+      "summary": "File: test/req.range.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/req.range.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-182",
+      "kind": "file",
+      "summary": "File: test/req.route.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/req.route.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-183",
+      "kind": "file",
+      "summary": "File: test/req.secure.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/req.secure.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-184",
+      "kind": "file",
+      "summary": "File: test/req.signedCookies.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/req.signedCookies.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-185",
+      "kind": "file",
+      "summary": "File: test/req.stale.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/req.stale.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-186",
+      "kind": "file",
+      "summary": "File: test/req.subdomains.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/req.subdomains.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-187",
+      "kind": "file",
+      "summary": "File: test/req.xhr.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/req.xhr.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-188",
+      "kind": "file",
+      "summary": "File: test/res.append.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/res.append.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-189",
+      "kind": "file",
+      "summary": "File: test/res.attachment.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/res.attachment.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-190",
+      "kind": "file",
+      "summary": "File: test/res.clearCookie.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/res.clearCookie.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-191",
+      "kind": "file",
+      "summary": "File: test/res.cookie.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/res.cookie.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-192",
+      "kind": "file",
+      "summary": "File: test/res.download.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/res.download.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-193",
+      "kind": "file",
+      "summary": "File: test/res.format.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/res.format.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-194",
+      "kind": "file",
+      "summary": "File: test/res.get.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/res.get.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-195",
+      "kind": "file",
+      "summary": "File: test/res.json.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/res.json.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-196",
+      "kind": "file",
+      "summary": "File: test/res.jsonp.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/res.jsonp.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-197",
+      "kind": "file",
+      "summary": "File: test/res.links.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/res.links.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-198",
+      "kind": "file",
+      "summary": "File: test/res.locals.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/res.locals.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-199",
+      "kind": "file",
+      "summary": "File: test/res.location.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/res.location.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-200",
+      "kind": "file",
+      "summary": "File: test/res.redirect.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/res.redirect.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-201",
+      "kind": "file",
+      "summary": "File: test/res.render.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/res.render.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-202",
+      "kind": "file",
+      "summary": "File: test/res.send.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/res.send.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-203",
+      "kind": "file",
+      "summary": "File: test/res.sendFile.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/res.sendFile.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-204",
+      "kind": "file",
+      "summary": "File: test/res.sendStatus.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/res.sendStatus.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-205",
+      "kind": "file",
+      "summary": "File: test/res.set.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/res.set.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-206",
+      "kind": "file",
+      "summary": "File: test/res.status.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/res.status.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-207",
+      "kind": "file",
+      "summary": "File: test/res.type.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/res.type.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-208",
+      "kind": "file",
+      "summary": "File: test/res.vary.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/res.vary.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-209",
+      "kind": "file",
+      "summary": "File: test/Route.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/Route.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-210",
+      "kind": "file",
+      "summary": "File: test/Router.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/Router.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-211",
+      "kind": "file",
+      "summary": "File: test/support/env.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/support/env.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-212",
+      "kind": "file",
+      "summary": "File: test/support/tmpl.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/support/tmpl.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-213",
+      "kind": "file",
+      "summary": "File: test/support/utils.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/support/utils.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-214",
+      "kind": "file",
+      "summary": "File: test/utils.js",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "test/utils.js",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "lang:javascript"
+      ]
+    },
+    {
+      "id": "obs-215",
+      "kind": "dependency",
+      "summary": "accepts@^2.0.0 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-216",
+      "kind": "dependency",
+      "summary": "body-parser@^2.3.0 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-217",
+      "kind": "dependency",
+      "summary": "content-disposition@^2.0.1 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-218",
+      "kind": "dependency",
+      "summary": "content-type@^2.0.0 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-219",
+      "kind": "dependency",
+      "summary": "cookie@^0.7.1 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-220",
+      "kind": "dependency",
+      "summary": "cookie-signature@^1.2.1 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-221",
+      "kind": "dependency",
+      "summary": "debug@^4.4.0 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-222",
+      "kind": "dependency",
+      "summary": "depd@^2.0.0 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-223",
+      "kind": "dependency",
+      "summary": "encodeurl@^2.0.0 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-224",
+      "kind": "dependency",
+      "summary": "escape-html@^1.0.3 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-225",
+      "kind": "dependency",
+      "summary": "etag@^1.8.1 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-226",
+      "kind": "dependency",
+      "summary": "finalhandler@^2.1.0 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-227",
+      "kind": "dependency",
+      "summary": "fresh@^2.0.0 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-228",
+      "kind": "dependency",
+      "summary": "http-errors@^2.0.0 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-229",
+      "kind": "dependency",
+      "summary": "merge-descriptors@^2.0.0 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-230",
+      "kind": "dependency",
+      "summary": "mime-types@^3.0.0 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-231",
+      "kind": "dependency",
+      "summary": "on-finished@^2.4.1 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-232",
+      "kind": "dependency",
+      "summary": "once@^1.4.0 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-233",
+      "kind": "dependency",
+      "summary": "parseurl@^1.3.3 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-234",
+      "kind": "dependency",
+      "summary": "proxy-addr@^2.0.7 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-235",
+      "kind": "dependency",
+      "summary": "qs@^6.15.2 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-236",
+      "kind": "dependency",
+      "summary": "range-parser@^1.2.1 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-237",
+      "kind": "dependency",
+      "summary": "router@^2.2.0 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-238",
+      "kind": "dependency",
+      "summary": "send@^1.1.0 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-239",
+      "kind": "dependency",
+      "summary": "serve-static@^2.2.0 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-240",
+      "kind": "dependency",
+      "summary": "statuses@^2.0.1 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-241",
+      "kind": "dependency",
+      "summary": "type-is@^2.1.0 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-242",
+      "kind": "dependency",
+      "summary": "vary@^1.1.2 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-243",
+      "kind": "dependency",
+      "summary": "after@0.8.2 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-244",
+      "kind": "dependency",
+      "summary": "connect-redis@^8.0.1 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-245",
+      "kind": "dependency",
+      "summary": "cookie-parser@1.4.7 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-246",
+      "kind": "dependency",
+      "summary": "cookie-session@2.1.1 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-247",
+      "kind": "dependency",
+      "summary": "ejs@^3.1.10 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-248",
+      "kind": "dependency",
+      "summary": "eslint@8.47.0 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-249",
+      "kind": "dependency",
+      "summary": "express-session@^1.18.1 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-250",
+      "kind": "dependency",
+      "summary": "hbs@4.3.0 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-251",
+      "kind": "dependency",
+      "summary": "marked@^15.0.3 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-252",
+      "kind": "dependency",
+      "summary": "method-override@3.0.0 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-253",
+      "kind": "dependency",
+      "summary": "mocha@^11.7.5 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-254",
+      "kind": "dependency",
+      "summary": "morgan@1.12.0 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-255",
+      "kind": "dependency",
+      "summary": "nyc@^17.1.0 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-256",
+      "kind": "dependency",
+      "summary": "pbkdf2-password@1.2.1 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-257",
+      "kind": "dependency",
+      "summary": "supertest@^6.3.0 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-258",
+      "kind": "dependency",
+      "summary": "vhost@~3.0.2 (from package.json)",
+      "detail": null,
+      "source": {
+        "tool": "inventory",
+        "path": "package.json",
+        "line": null,
+        "address": null,
+        "ruleId": null
+      },
+      "tags": [
+        "manifest:package.json"
+      ]
+    },
+    {
+      "id": "obs-259",
+      "kind": "finding",
+      "summary": "[package_managers.dependabot.dependabot-missing-cooldown.dependabot-missing-cooldown] This Dependabot configuration does not set a cooldown period. Newly published packages can be malicious or unstable. Add a `cooldown` block with `default-days: 7` to each `package-ecosystem` entry under `updates` to wait 7 days before proposing updates to newly published package versions. Reference: https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-depe",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": ".github/dependabot.yml",
+        "line": 3,
+        "address": null,
+        "ruleId": "package_managers.dependabot.dependabot-missing-cooldown.dependabot-missing-cooldown"
+      },
+      "tags": [
+        "severity:MEDIUM"
+      ]
+    },
+    {
+      "id": "obs-260",
+      "kind": "finding",
+      "summary": "[package_managers.dependabot.dependabot-missing-cooldown.dependabot-missing-cooldown] This Dependabot configuration does not set a cooldown period. Newly published packages can be malicious or unstable. Add a `cooldown` block with `default-days: 7` to each `package-ecosystem` entry under `updates` to wait 7 days before proposing updates to newly published package versions. Reference: https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-depe",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": ".github/dependabot.yml",
+        "line": 12,
+        "address": null,
+        "ruleId": "package_managers.dependabot.dependabot-missing-cooldown.dependabot-missing-cooldown"
+      },
+      "tags": [
+        "severity:MEDIUM"
+      ]
+    },
+    {
+      "id": "obs-261",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-default-name] Don’t use the default session cookie name Using the default session cookie name can open your app to attacks. The security issue posed is similar to X-Powered-By: a potential attacker can use it to fingerprint the server and target attacks accordingly.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/auth/index.js",
+        "line": 22,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-default-name"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-262",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-domain] Default session middleware settings: `domain` not set. It indicates the domain of the cookie; use it to compare against the domain of the server in which the URL is being requested. If they match, then check the path attribute next.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/auth/index.js",
+        "line": 22,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-domain"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-263",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-expires] Default session middleware settings: `expires` not set. Use it to set expiration date for persistent cookies.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/auth/index.js",
+        "line": 22,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-expires"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-264",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-httponly] Default session middleware settings: `httpOnly` not set. It ensures the cookie is sent only over HTTP(S), not client JavaScript, helping to protect against cross-site scripting attacks.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/auth/index.js",
+        "line": 22,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-httponly"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-265",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-path] Default session middleware settings: `path` not set. It indicates the path of the cookie; use it to compare against the request path. If this and domain match, then send the cookie in the request.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/auth/index.js",
+        "line": 22,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-path"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-266",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-secure] Default session middleware settings: `secure` not set. It ensures the browser only sends the cookie over HTTPS.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/auth/index.js",
+        "line": 22,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-secure"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-267",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-session-hardcoded-secret.express-session-hardcoded-secret] A hard-coded credential was detected. It is not recommended to store credentials in source-code, as this risks secrets being leaked and used by either an internal or external malicious adversary. It is recommended to use environment variables to securely provide credentials or retrieve credentials from a secure vault or HSM (Hardware Security Module).",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/auth/index.js",
+        "line": 25,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-session-hardcoded-secret.express-session-hardcoded-secret"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-268",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape] Detected an explicit unescape in an EJS template, using '<%- ... %>' If external data can reach these locations, your application is exposed to a cross-site scripting (XSS) vulnerability. Use '<%= ... %>' to escape this data. If you need escaping, ensure no external data can reach this location.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/auth/views/login.ejs",
+        "line": 5,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-269",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-default-name] Don’t use the default session cookie name Using the default session cookie name can open your app to attacks. The security issue posed is similar to X-Powered-By: a potential attacker can use it to fingerprint the server and target attacks accordingly.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/cookie-sessions/index.js",
+        "line": 13,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-default-name"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-270",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-domain] Default session middleware settings: `domain` not set. It indicates the domain of the cookie; use it to compare against the domain of the server in which the URL is being requested. If they match, then check the path attribute next.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/cookie-sessions/index.js",
+        "line": 13,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-domain"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-271",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-expires] Default session middleware settings: `expires` not set. Use it to set expiration date for persistent cookies.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/cookie-sessions/index.js",
+        "line": 13,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-expires"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-272",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-httponly] Default session middleware settings: `httpOnly` not set. It ensures the cookie is sent only over HTTP(S), not client JavaScript, helping to protect against cross-site scripting attacks.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/cookie-sessions/index.js",
+        "line": 13,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-httponly"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-273",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-path] Default session middleware settings: `path` not set. It indicates the path of the cookie; use it to compare against the request path. If this and domain match, then send the cookie in the request.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/cookie-sessions/index.js",
+        "line": 13,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-path"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-274",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-secure] Default session middleware settings: `secure` not set. It ensures the browser only sends the cookie over HTTPS.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/cookie-sessions/index.js",
+        "line": 13,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-secure"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-275",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-default-name] Don’t use the default session cookie name Using the default session cookie name can open your app to attacks. The security issue posed is similar to X-Powered-By: a potential attacker can use it to fingerprint the server and target attacks accordingly.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/mvc/index.js",
+        "line": 40,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-default-name"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-276",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-domain] Default session middleware settings: `domain` not set. It indicates the domain of the cookie; use it to compare against the domain of the server in which the URL is being requested. If they match, then check the path attribute next.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/mvc/index.js",
+        "line": 40,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-domain"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-277",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-expires] Default session middleware settings: `expires` not set. Use it to set expiration date for persistent cookies.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/mvc/index.js",
+        "line": 40,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-expires"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-278",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-httponly] Default session middleware settings: `httpOnly` not set. It ensures the cookie is sent only over HTTP(S), not client JavaScript, helping to protect against cross-site scripting attacks.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/mvc/index.js",
+        "line": 40,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-httponly"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-279",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-path] Default session middleware settings: `path` not set. It indicates the path of the cookie; use it to compare against the request path. If this and domain match, then send the cookie in the request.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/mvc/index.js",
+        "line": 40,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-path"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-280",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-secure] Default session middleware settings: `secure` not set. It ensures the browser only sends the cookie over HTTPS.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/mvc/index.js",
+        "line": 40,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-secure"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-281",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-session-hardcoded-secret.express-session-hardcoded-secret] A hard-coded credential was detected. It is not recommended to store credentials in source-code, as this risks secrets being leaked and used by either an internal or external malicious adversary. It is recommended to use environment variables to securely provide credentials or retrieve credentials from a secure vault or HSM (Hardware Security Module).",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/mvc/index.js",
+        "line": 43,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-session-hardcoded-secret.express-session-hardcoded-secret"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-282",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.xss.direct-response-write.direct-response-write] Detected directly writing to a Response object from user-defined input. This bypasses any HTML escaping and may expose your application to a Cross-Site-scripting (XSS) vulnerability. Instead, use 'resp.render()' to render safely escaped HTML.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/params/index.js",
+        "line": 67,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.xss.direct-response-write.direct-response-write"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-283",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.xss.direct-response-write.direct-response-write] Detected directly writing to a Response object from user-defined input. This bypasses any HTML escaping and may expose your application to a Cross-Site-scripting (XSS) vulnerability. Instead, use 'resp.render()' to render safely escaped HTML.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/resource/index.js",
+        "line": 46,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.xss.direct-response-write.direct-response-write"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-284",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.xss.direct-response-write.direct-response-write] Detected directly writing to a Response object from user-defined input. This bypasses any HTML escaping and may expose your application to a Cross-Site-scripting (XSS) vulnerability. Instead, use 'resp.render()' to render safely escaped HTML.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/route-map/index.js",
+        "line": 37,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.xss.direct-response-write.direct-response-write"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-285",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.xss.direct-response-write.direct-response-write] Detected directly writing to a Response object from user-defined input. This bypasses any HTML escaping and may expose your application to a Cross-Site-scripting (XSS) vulnerability. Instead, use 'resp.render()' to render safely escaped HTML.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/route-map/index.js",
+        "line": 47,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.xss.direct-response-write.direct-response-write"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-286",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.xss.direct-response-write.direct-response-write] Detected directly writing to a Response object from user-defined input. This bypasses any HTML escaping and may expose your application to a Cross-Site-scripting (XSS) vulnerability. Instead, use 'resp.render()' to render safely escaped HTML.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/route-map/index.js",
+        "line": 51,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.xss.direct-response-write.direct-response-write"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-287",
+      "kind": "finding",
+      "summary": "[javascript.lang.security.audit.unsafe-formatstring.unsafe-formatstring] Detected string concatenation with a non-literal variable in a util.format / console.log function. If an attacker injects a format specifier in the string, it will forge the log message. Try to use constant values for the format string.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/search/index.js",
+        "line": 57,
+        "address": null,
+        "ruleId": "javascript.lang.security.audit.unsafe-formatstring.unsafe-formatstring"
+      },
+      "tags": [
+        "severity:INFO"
+      ]
+    },
+    {
+      "id": "obs-288",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-default-name] Don’t use the default session cookie name Using the default session cookie name can open your app to attacks. The security issue posed is similar to X-Powered-By: a potential attacker can use it to fingerprint the server and target attacks accordingly.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/session/index.js",
+        "line": 16,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-default-name"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-289",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-domain] Default session middleware settings: `domain` not set. It indicates the domain of the cookie; use it to compare against the domain of the server in which the URL is being requested. If they match, then check the path attribute next.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/session/index.js",
+        "line": 16,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-domain"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-290",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-expires] Default session middleware settings: `expires` not set. Use it to set expiration date for persistent cookies.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/session/index.js",
+        "line": 16,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-expires"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-291",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-httponly] Default session middleware settings: `httpOnly` not set. It ensures the cookie is sent only over HTTP(S), not client JavaScript, helping to protect against cross-site scripting attacks.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/session/index.js",
+        "line": 16,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-httponly"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-292",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-path] Default session middleware settings: `path` not set. It indicates the path of the cookie; use it to compare against the request path. If this and domain match, then send the cookie in the request.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/session/index.js",
+        "line": 16,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-path"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-293",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-secure] Default session middleware settings: `secure` not set. It ensures the browser only sends the cookie over HTTPS.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/session/index.js",
+        "line": 16,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-secure"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-294",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-session-hardcoded-secret.express-session-hardcoded-secret] A hard-coded credential was detected. It is not recommended to store credentials in source-code, as this risks secrets being leaked and used by either an internal or external malicious adversary. It is recommended to use environment variables to securely provide credentials or retrieve credentials from a secure vault or HSM (Hardware Security Module).",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/session/index.js",
+        "line": 19,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-session-hardcoded-secret.express-session-hardcoded-secret"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-295",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-default-name] Don’t use the default session cookie name Using the default session cookie name can open your app to attacks. The security issue posed is similar to X-Powered-By: a potential attacker can use it to fingerprint the server and target attacks accordingly.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/session/redis.js",
+        "line": 20,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-default-name"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-296",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-domain] Default session middleware settings: `domain` not set. It indicates the domain of the cookie; use it to compare against the domain of the server in which the URL is being requested. If they match, then check the path attribute next.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/session/redis.js",
+        "line": 20,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-domain"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-297",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-expires] Default session middleware settings: `expires` not set. Use it to set expiration date for persistent cookies.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/session/redis.js",
+        "line": 20,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-expires"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-298",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-httponly] Default session middleware settings: `httpOnly` not set. It ensures the cookie is sent only over HTTP(S), not client JavaScript, helping to protect against cross-site scripting attacks.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/session/redis.js",
+        "line": 20,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-httponly"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-299",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-path] Default session middleware settings: `path` not set. It indicates the path of the cookie; use it to compare against the request path. If this and domain match, then send the cookie in the request.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/session/redis.js",
+        "line": 20,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-path"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-300",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-secure] Default session middleware settings: `secure` not set. It ensures the browser only sends the cookie over HTTPS.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/session/redis.js",
+        "line": 20,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-secure"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-301",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.express-session-hardcoded-secret.express-session-hardcoded-secret] A hard-coded credential was detected. It is not recommended to store credentials in source-code, as this risks secrets being leaked and used by either an internal or external malicious adversary. It is recommended to use environment variables to securely provide credentials or retrieve credentials from a secure vault or HSM (Hardware Security Module).",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/session/redis.js",
+        "line": 23,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.express-session-hardcoded-secret.express-session-hardcoded-secret"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-302",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.xss.direct-response-write.direct-response-write] Detected directly writing to a Response object from user-defined input. This bypasses any HTML escaping and may expose your application to a Cross-Site-scripting (XSS) vulnerability. Instead, use 'resp.render()' to render safely escaped HTML.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/vhost/index.js",
+        "line": 30,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.xss.direct-response-write.direct-response-write"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    },
+    {
+      "id": "obs-303",
+      "kind": "finding",
+      "summary": "[javascript.express.security.audit.xss.direct-response-write.direct-response-write] Detected directly writing to a Response object from user-defined input. This bypasses any HTML escaping and may expose your application to a Cross-Site-scripting (XSS) vulnerability. Instead, use 'resp.render()' to render safely escaped HTML.",
+      "detail": "requires login",
+      "source": {
+        "tool": "semgrep",
+        "path": "examples/web-service/index.js",
+        "line": 89,
+        "address": null,
+        "ruleId": "javascript.express.security.audit.xss.direct-response-write.direct-response-write"
+      },
+      "tags": [
+        "severity:WARNING"
+      ]
+    }
+  ],
+  "inferences": [
+    {
+      "id": "inf-001",
+      "summary": "Project appears to be a web server",
+      "explanation": "Two or more entry-point files were found alongside an HTTP framework dependency.",
+      "confidence": "medium",
+      "evidenceIds": [
+        "obs-012",
+        "obs-017",
+        "obs-249"
+      ]
+    }
+  ],
+  "unknowns": [],
+  "warnings": [
+    "trivy: trivy: not installed or scan failed"
+  ]
+}

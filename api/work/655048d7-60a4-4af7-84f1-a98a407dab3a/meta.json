@@ -1,0 +1,48 @@
+{
+  "jobId": "655048d7-60a4-4af7-84f1-a98a407dab3a",
+  "origin": "source-repository",
+  "status": "completed",
+  "createdAt": "2026-09-24T22:00:22.498Z",
+  "updatedAt": "2026-09-24T22:00:34.119Z",
+  "input": {
+    "name": "expressjs/express",
+    "sha256": null,
+    "commit": "9a34acf03cb818ff3f8bc40e44176e277a25cbb9",
+    "url": "https://github.com/expressjs/express"
+  },
+  "phases": [
+    {
+      "name": "queued",
+      "startedAt": "2026-09-24T22:00:22.499Z",
+      "endedAt": "2026-09-24T22:00:22.545Z",
+      "status": "completed"
+    },
+    {
+      "name": "preparing",
+      "startedAt": "2026-09-24T22:00:22.545Z",
+      "endedAt": "2026-09-24T22:00:22.547Z",
+      "status": "completed"
+    },
+    {
+      "name": "scanning",
+      "startedAt": "2026-09-24T22:00:22.547Z",
+      "endedAt": "2026-09-24T22:00:34.021Z",
+      "status": "completed"
+    },
+    {
+      "name": "reporting",
+      "startedAt": "2026-09-24T22:00:34.021Z",
+      "endedAt": "2026-09-24T22:00:34.119Z",
+      "status": "completed"
+    },
+    {
+      "name": "completed",
+      "startedAt": "2026-09-24T22:00:34.119Z",
+      "endedAt": "2026-09-24T22:00:34.119Z",
+      "status": "completed"
+    }
+  ],
+  "warnings": [],
+  "error": null,
+  "workDir": "C:\\Users\\chess\\OneDrive\\Escritorio\\DesarrolloWeb\\Bob TEST\\api\\work\\cf86f136-7915-462e-9330-64b37a587c9c"
+}

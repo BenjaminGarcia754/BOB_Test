@@ -1,0 +1,48 @@
+{
+  "jobId": "11111111-1111-1111-1111-111111111111",
+  "origin": "source-repository",
+  "status": "queued",
+  "createdAt": "2026-09-24T18:34:50.194Z",
+  "updatedAt": "2026-09-24T18:34:50.194Z",
+  "input": {
+    "name": "test-repo",
+    "sha256": null,
+    "commit": null,
+    "url": "https://github.com/a/b"
+  },
+  "phases": [
+    {
+      "name": "queued",
+      "startedAt": "2026-09-24T18:34:50.194Z",
+      "endedAt": null,
+      "status": "running"
+    },
+    {
+      "name": "preparing",
+      "startedAt": null,
+      "endedAt": null,
+      "status": "pending"
+    },
+    {
+      "name": "scanning",
+      "startedAt": null,
+      "endedAt": null,
+      "status": "pending"
+    },
+    {
+      "name": "reporting",
+      "startedAt": null,
+      "endedAt": null,
+      "status": "pending"
+    },
+    {
+      "name": "completed",
+      "startedAt": null,
+      "endedAt": null,
+      "status": "pending"
+    }
+  ],
+  "warnings": [],
+  "error": null,
+  "workDir": "C:\\Users\\chess\\AppData\\Local\\Temp\\jobs-test-8QYQ7t\\11111111-1111-1111-1111-111111111111"
+}

@@ -1,0 +1,51 @@
+{
+  "jobId": "7dd55930-5f34-4b32-a482-7a8cff975598",
+  "origin": "binary",
+  "status": "failed",
+  "createdAt": "2026-09-24T23:08:17.545Z",
+  "updatedAt": "2026-09-24T23:08:17.827Z",
+  "input": {
+    "name": "node.exe",
+    "sha256": "77bdff912b1c569b3e693fe126f619337c3e9d73dafbc4d0bf1d4f1f6a145761",
+    "commit": null
+  },
+  "phases": [
+    {
+      "name": "queued",
+      "startedAt": "2026-09-24T23:08:17.549Z",
+      "endedAt": "2026-09-24T23:08:17.561Z",
+      "status": "completed"
+    },
+    {
+      "name": "preparing",
+      "startedAt": "2026-09-24T23:08:17.561Z",
+      "endedAt": "2026-09-24T23:08:17.648Z",
+      "status": "completed"
+    },
+    {
+      "name": "scanning",
+      "startedAt": "2026-09-24T23:08:17.648Z",
+      "endedAt": "2026-09-24T23:08:17.827Z",
+      "status": "failed"
+    },
+    {
+      "name": "reporting",
+      "startedAt": null,
+      "endedAt": null,
+      "status": "pending"
+    },
+    {
+      "name": "completed",
+      "startedAt": null,
+      "endedAt": null,
+      "status": "pending"
+    }
+  ],
+  "warnings": [],
+  "error": {
+    "phase": "scanning",
+    "message": "TOOL_ERROR: Ghidra not found at GHIDRA_HOME (/opt/ghidra)",
+    "cause": "TOOL_ERROR"
+  },
+  "workDir": "C:\\Users\\chess\\OneDrive\\Escritorio\\DesarrolloWeb\\Bob TEST\\api\\work\\ceceb920-27b0-4bf7-83a1-603fcae0767a"
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"trivy.d.ts","sourceRoot":"","sources":["../../../src/analysers/source/trivy.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,WAAW,EAAE,UAAU,EAAE,MAAM,wBAAwB,CAAC;AA6CjE,wBAAsB,QAAQ,CAC5B,SAAS,EAAE,MAAM,EACjB,aAAa,EAAE,MAAM,GACpB,OAAO,CAAC;IAAE,YAAY,EAAE,WAAW,EAAE,CAAC;IAAC,UAAU,EAAE,UAAU,CAAA;CAAE,CAAC,CAkElE"}

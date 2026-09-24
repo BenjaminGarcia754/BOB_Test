@@ -1,0 +1,4751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Code Archaeologist Report — expressjs/express</title>
+<style>
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, "Segoe UI", system-ui, sans-serif; font-size: 15px; line-height: 1.6; color: #1f2328; background: #fff; margin: 0; padding: 20px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    h1 { font-size: 1.8em; border-bottom: 2px solid #3b82d4; padding-bottom: 8px; }
+    h2 { font-size: 1.3em; border-bottom: 1px solid #e5e7eb; padding-bottom: 4px; margin-top: 32px; }
+    h3 { font-size: 1.1em; margin-top: 24px; }
+    table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 14px; }
+    th, td { border: 1px solid #e5e7eb; padding: 6px 10px; text-align: left; }
+    th { background: #f7f8fa; font-weight: 600; }
+    code { background: #f7f8fa; padding: 2px 5px; border-radius: 3px; font-size: 13px; }
+    pre { background: #f7f8fa; padding: 12px; border-radius: 4px; overflow-x: auto; border: 1px solid #e5e7eb; }
+    pre code { background: none; padding: 0; }
+    blockquote { border-left: 4px solid #3b82d4; margin: 0; padding: 4px 16px; background: #f0f6ff; }
+    .badge-observed { display: inline-block; background: #3b82d4; color: #fff; padding: 1px 7px; border-radius: 3px; font-size: 12px; font-weight: 600; }
+    .badge-inferred { display: inline-block; background: #d97706; color: #fff; padding: 1px 7px; border-radius: 3px; font-size: 12px; font-weight: 600; }
+    .badge-unknown { display: inline-block; background: #6b7280; color: #fff; padding: 1px 7px; border-radius: 3px; font-size: 12px; font-weight: 600; }
+    .badge-finding { display: inline-block; background: #dc2626; color: #fff; padding: 1px 7px; border-radius: 3px; font-size: 12px; font-weight: 600; }
+    .toc { background: #f7f8fa; border: 1px solid #e5e7eb; border-radius: 4px; padding: 12px 20px; margin-bottom: 24px; }
+    .toc h2 { font-size: 1em; margin: 0 0 8px; border: none; }
+    .toc ul { margin: 0; padding-left: 18px; }
+    .toc li { margin: 2px 0; }
+    a { color: #3b82d4; }
+    footer { margin-top: 40px; padding-top: 12px; border-top: 1px solid #e5e7eb; text-align: center; font-size: 12px; color: #57606a; }
+  </style>
+</head>
+<body>
+<div class="container">
+<nav class="toc">
+  <h2>Table of Contents</h2>
+  <ul>
+    <li><a href="#identification">Identification</a></li>
+<li><a href="#analysis-summary">Analysis Summary</a></li>
+<li><a href="#observed-findings">Observed Findings</a></li>
+<li><a href="#justified-inferences">Justified Inferences</a></li>
+<li><a href="#dependencies--risks">Dependencies & Risks</a></li>
+<li><a href="#limitations">Limitations</a></li>
+<li><a href="#appendix-evidence-index">Appendix: Evidence Index</a></li>
+  </ul>
+</nav>
+<h1>Code Archaeologist Analysis Report</h1>
+<blockquote>
+<p><strong>Analysis Warnings:</strong></p>
+<ul>
+<li>trivy: trivy: not installed or scan failed</li>
+</ul>
+</blockquote>
+<h2>Identification</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Analysis ID</td>
+<td><code>ad2eac26-de3f-4b43-a15f-7ae70e8dc6c4</code></td>
+</tr>
+<tr>
+<td>Origin</td>
+<td>source-repository</td>
+</tr>
+<tr>
+<td>Input</td>
+<td>expressjs/express</td>
+</tr>
+<tr>
+<td>SHA-256</td>
+<td><code>N/A (repository)</code></td>
+</tr>
+<tr>
+<td>Git Commit</td>
+<td><code>9a34acf03cb818ff3f8bc40e44176e277a25cbb9</code></td>
+</tr>
+<tr>
+<td>Analysed At</td>
+<td>2026-09-24T23:37:10.328Z</td>
+</tr>
+</tbody></table>
+<h2>Analysis Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Status</th>
+<th>Version</th>
+<th>Data Date</th>
+<th>Coverage Notes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>inventory</td>
+<td>completed</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>semgrep</td>
+<td>completed</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>trivy</td>
+<td>failed</td>
+<td>—</td>
+<td>—</td>
+<td>trivy: not installed or scan failed</td>
+</tr>
+</tbody></table>
+<h2>Observed Findings</h2>
+<h3>[obs-001] File: .editorconfig</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: .editorconfig</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-002] File: .eslintignore</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: .eslintignore</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-003] File: .eslintrc.yml</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: .eslintrc.yml</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-004] File: .github/dependabot.yml</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: .github/dependabot.yml</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-005] File: .github/workflows/ci.yml</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: .github/workflows/ci.yml</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-006] File: .github/workflows/codeql.yml</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: .github/workflows/codeql.yml</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-007] File: .github/workflows/legacy.yml</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: .github/workflows/legacy.yml</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-008] File: .github/workflows/npm-publish.yml</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: .github/workflows/npm-publish.yml</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-009] File: .github/workflows/scorecard.yml</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: .github/workflows/scorecard.yml</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-010] File: .gitignore</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: .gitignore</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-011] File: .npmrc</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: .npmrc</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-012] File: examples/auth/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/auth/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-013] File: examples/auth/views/foot.ejs</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/auth/views/foot.ejs</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-014] File: examples/auth/views/head.ejs</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/auth/views/head.ejs</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-015] File: examples/auth/views/login.ejs</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/auth/views/login.ejs</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-016] File: examples/content-negotiation/db.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/content-negotiation/db.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-017] File: examples/content-negotiation/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/content-negotiation/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-018] File: examples/content-negotiation/users.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/content-negotiation/users.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-019] File: examples/cookie-sessions/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/cookie-sessions/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-020] File: examples/cookies/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/cookies/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-021] File: examples/downloads/files/amazing.txt</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/downloads/files/amazing.txt</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-022] File: examples/downloads/files/CCTV大赛上海分赛区.txt</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/downloads/files/CCTV大赛上海分赛区.txt</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-023] File: examples/downloads/files/notes/groceries.txt</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/downloads/files/notes/groceries.txt</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-024] File: examples/downloads/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/downloads/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-025] File: examples/ejs/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/ejs/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-026] File: examples/ejs/public/stylesheets/style.css</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/ejs/public/stylesheets/style.css</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-027] File: examples/ejs/views/footer.html</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/ejs/views/footer.html</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-028] File: examples/ejs/views/header.html</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/ejs/views/header.html</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-029] File: examples/ejs/views/users.html</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/ejs/views/users.html</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-030] File: examples/error/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/error/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-031] File: examples/error-pages/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/error-pages/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-032] File: examples/error-pages/views/404.ejs</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/error-pages/views/404.ejs</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-033] File: examples/error-pages/views/500.ejs</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/error-pages/views/500.ejs</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-034] File: examples/error-pages/views/error_header.ejs</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/error-pages/views/error_header.ejs</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-035] File: examples/error-pages/views/footer.ejs</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/error-pages/views/footer.ejs</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-036] File: examples/error-pages/views/index.ejs</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/error-pages/views/index.ejs</li>
+<li><strong>Tags:</strong> entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-037] File: examples/hello-world/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/hello-world/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-038] File: examples/markdown/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/markdown/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-039] File: examples/markdown/views/index.md</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/markdown/views/index.md</li>
+<li><strong>Tags:</strong> entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-040] File: examples/multi-router/controllers/api_v1.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/multi-router/controllers/api_v1.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-041] File: examples/multi-router/controllers/api_v2.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/multi-router/controllers/api_v2.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-042] File: examples/multi-router/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/multi-router/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-043] File: examples/mvc/controllers/main/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/mvc/controllers/main/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-044] File: examples/mvc/controllers/pet/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/mvc/controllers/pet/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-045] File: examples/mvc/controllers/pet/views/edit.ejs</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/mvc/controllers/pet/views/edit.ejs</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-046] File: examples/mvc/controllers/pet/views/show.ejs</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/mvc/controllers/pet/views/show.ejs</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-047] File: examples/mvc/controllers/user/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/mvc/controllers/user/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-048] File: examples/mvc/controllers/user/views/edit.hbs</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/mvc/controllers/user/views/edit.hbs</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-049] File: examples/mvc/controllers/user/views/list.hbs</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/mvc/controllers/user/views/list.hbs</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-050] File: examples/mvc/controllers/user/views/show.hbs</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/mvc/controllers/user/views/show.hbs</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-051] File: examples/mvc/controllers/user-pet/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/mvc/controllers/user-pet/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-052] File: examples/mvc/db.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/mvc/db.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-053] File: examples/mvc/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/mvc/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-054] File: examples/mvc/lib/boot.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/mvc/lib/boot.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-055] File: examples/mvc/public/style.css</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/mvc/public/style.css</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-056] File: examples/mvc/views/404.ejs</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/mvc/views/404.ejs</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-057] File: examples/mvc/views/5xx.ejs</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/mvc/views/5xx.ejs</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-058] File: examples/online/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/online/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-059] File: examples/params/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/params/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-060] File: examples/README.md</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/README.md</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-061] File: examples/resource/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/resource/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-062] File: examples/route-map/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/route-map/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-063] File: examples/route-middleware/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/route-middleware/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-064] File: examples/route-separation/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/route-separation/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-065] File: examples/route-separation/post.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/route-separation/post.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-066] File: examples/route-separation/public/style.css</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/route-separation/public/style.css</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-067] File: examples/route-separation/site.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/route-separation/site.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-068] File: examples/route-separation/user.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/route-separation/user.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-069] File: examples/route-separation/views/footer.ejs</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/route-separation/views/footer.ejs</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-070] File: examples/route-separation/views/header.ejs</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/route-separation/views/header.ejs</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-071] File: examples/route-separation/views/index.ejs</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/route-separation/views/index.ejs</li>
+<li><strong>Tags:</strong> entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-072] File: examples/route-separation/views/posts/index.ejs</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/route-separation/views/posts/index.ejs</li>
+<li><strong>Tags:</strong> entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-073] File: examples/route-separation/views/users/edit.ejs</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/route-separation/views/users/edit.ejs</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-074] File: examples/route-separation/views/users/index.ejs</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/route-separation/views/users/index.ejs</li>
+<li><strong>Tags:</strong> entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-075] File: examples/route-separation/views/users/view.ejs</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/route-separation/views/users/view.ejs</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-076] File: examples/search/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/search/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-077] File: examples/search/public/client.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/search/public/client.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-078] File: examples/search/public/index.html</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/search/public/index.html</li>
+<li><strong>Tags:</strong> entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-079] File: examples/session/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/session/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-080] File: examples/session/redis.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/session/redis.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-081] File: examples/static-files/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/static-files/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-082] File: examples/static-files/public/css/style.css</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/static-files/public/css/style.css</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-083] File: examples/static-files/public/hello.txt</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/static-files/public/hello.txt</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-084] File: examples/static-files/public/js/app.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/static-files/public/js/app.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-085] File: examples/vhost/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/vhost/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-086] File: examples/view-constructor/github-view.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/view-constructor/github-view.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-087] File: examples/view-constructor/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/view-constructor/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-088] File: examples/view-locals/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/view-locals/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-089] File: examples/view-locals/user.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/view-locals/user.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-090] File: examples/view-locals/views/index.ejs</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/view-locals/views/index.ejs</li>
+<li><strong>Tags:</strong> entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-091] File: examples/web-service/index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: examples/web-service/index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-092] File: History.md</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: History.md</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-093] File: index.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: index.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-094] File: lib/application.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: lib/application.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-095] File: lib/express.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: lib/express.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-096] File: lib/request.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: lib/request.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-097] File: lib/response.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: lib/response.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-098] File: lib/utils.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: lib/utils.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-099] File: lib/view.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: lib/view.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-100] File: LICENSE</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: LICENSE</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-101] File: package.json</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: package.json</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-102] File: Readme.md</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: Readme.md</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-103] File: test/acceptance/auth.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/acceptance/auth.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-104] File: test/acceptance/content-negotiation.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/acceptance/content-negotiation.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-105] File: test/acceptance/cookie-sessions.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/acceptance/cookie-sessions.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-106] File: test/acceptance/cookies.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/acceptance/cookies.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-107] File: test/acceptance/downloads.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/acceptance/downloads.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-108] File: test/acceptance/ejs.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/acceptance/ejs.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-109] File: test/acceptance/error-pages.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/acceptance/error-pages.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-110] File: test/acceptance/error.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/acceptance/error.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-111] File: test/acceptance/hello-world.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/acceptance/hello-world.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-112] File: test/acceptance/markdown.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/acceptance/markdown.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-113] File: test/acceptance/multi-router.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/acceptance/multi-router.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-114] File: test/acceptance/mvc.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/acceptance/mvc.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-115] File: test/acceptance/params.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/acceptance/params.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-116] File: test/acceptance/resource.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/acceptance/resource.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-117] File: test/acceptance/route-map.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/acceptance/route-map.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-118] File: test/acceptance/route-separation.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/acceptance/route-separation.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-119] File: test/acceptance/vhost.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/acceptance/vhost.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-120] File: test/acceptance/web-service.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/acceptance/web-service.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-121] File: test/app.all.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/app.all.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-122] File: test/app.engine.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/app.engine.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-123] File: test/app.head.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/app.head.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-124] File: test/app.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/app.js</li>
+<li><strong>Tags:</strong> lang:javascript, entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-125] File: test/app.listen.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/app.listen.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-126] File: test/app.locals.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/app.locals.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-127] File: test/app.options.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/app.options.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-128] File: test/app.param.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/app.param.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-129] File: test/app.render.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/app.render.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-130] File: test/app.request.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/app.request.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-131] File: test/app.response.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/app.response.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-132] File: test/app.route.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/app.route.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-133] File: test/app.router.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/app.router.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-134] File: test/app.routes.error.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/app.routes.error.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-135] File: test/app.use.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/app.use.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-136] File: test/config.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/config.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-137] File: test/exports.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/exports.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-138] File: test/express.json.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/express.json.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-139] File: test/express.raw.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/express.raw.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-140] File: test/express.static.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/express.static.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-141] File: test/express.text.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/express.text.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-142] File: test/express.urlencoded.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/express.urlencoded.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-143] File: test/fixtures/% of dogs.txt</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/fixtures/% of dogs.txt</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-144] File: test/fixtures/.name</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/fixtures/.name</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-145] File: test/fixtures/blog/index.html</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/fixtures/blog/index.html</li>
+<li><strong>Tags:</strong> entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-146] File: test/fixtures/blog/post/index.tmpl</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/fixtures/blog/post/index.tmpl</li>
+<li><strong>Tags:</strong> entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-147] File: test/fixtures/broken.send</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/fixtures/broken.send</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-148] File: test/fixtures/default_layout/name.tmpl</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/fixtures/default_layout/name.tmpl</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-149] File: test/fixtures/default_layout/user.tmpl</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/fixtures/default_layout/user.tmpl</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-150] File: test/fixtures/email.tmpl</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/fixtures/email.tmpl</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-151] File: test/fixtures/empty.txt</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/fixtures/empty.txt</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-152] File: test/fixtures/local_layout/user.tmpl</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/fixtures/local_layout/user.tmpl</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-153] File: test/fixtures/name.tmpl</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/fixtures/name.tmpl</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-154] File: test/fixtures/name.txt</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/fixtures/name.txt</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-155] File: test/fixtures/nums.txt</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/fixtures/nums.txt</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-156] File: test/fixtures/pets/names.txt</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/fixtures/pets/names.txt</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-157] File: test/fixtures/snow ☃/.gitkeep</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/fixtures/snow ☃/.gitkeep</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-158] File: test/fixtures/todo.html</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/fixtures/todo.html</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-159] File: test/fixtures/todo.txt</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/fixtures/todo.txt</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-160] File: test/fixtures/user.html</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/fixtures/user.html</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-161] File: test/fixtures/user.tmpl</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/fixtures/user.tmpl</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-162] File: test/fixtures/users/index.html</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/fixtures/users/index.html</li>
+<li><strong>Tags:</strong> entry-point<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-163] File: test/fixtures/users/tobi.txt</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/fixtures/users/tobi.txt</li>
+<li><strong>Tags:</strong> —<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-164] File: test/middleware.basic.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/middleware.basic.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-165] File: test/regression.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/regression.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-166] File: test/req.accepts.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/req.accepts.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-167] File: test/req.acceptsCharsets.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/req.acceptsCharsets.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-168] File: test/req.acceptsEncodings.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/req.acceptsEncodings.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-169] File: test/req.acceptsLanguages.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/req.acceptsLanguages.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-170] File: test/req.baseUrl.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/req.baseUrl.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-171] File: test/req.fresh.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/req.fresh.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-172] File: test/req.get.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/req.get.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-173] File: test/req.host.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/req.host.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-174] File: test/req.hostname.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/req.hostname.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-175] File: test/req.ip.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/req.ip.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-176] File: test/req.ips.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/req.ips.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-177] File: test/req.is.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/req.is.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-178] File: test/req.path.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/req.path.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-179] File: test/req.protocol.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/req.protocol.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-180] File: test/req.query.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/req.query.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-181] File: test/req.range.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/req.range.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-182] File: test/req.route.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/req.route.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-183] File: test/req.secure.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/req.secure.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-184] File: test/req.signedCookies.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/req.signedCookies.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-185] File: test/req.stale.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/req.stale.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-186] File: test/req.subdomains.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/req.subdomains.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-187] File: test/req.xhr.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/req.xhr.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-188] File: test/res.append.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/res.append.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-189] File: test/res.attachment.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/res.attachment.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-190] File: test/res.clearCookie.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/res.clearCookie.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-191] File: test/res.cookie.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/res.cookie.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-192] File: test/res.download.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/res.download.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-193] File: test/res.format.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/res.format.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-194] File: test/res.get.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/res.get.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-195] File: test/res.json.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/res.json.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-196] File: test/res.jsonp.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/res.jsonp.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-197] File: test/res.links.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/res.links.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-198] File: test/res.locals.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/res.locals.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-199] File: test/res.location.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/res.location.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-200] File: test/res.redirect.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/res.redirect.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-201] File: test/res.render.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/res.render.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-202] File: test/res.send.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/res.send.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-203] File: test/res.sendFile.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/res.sendFile.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-204] File: test/res.sendStatus.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/res.sendStatus.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-205] File: test/res.set.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/res.set.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-206] File: test/res.status.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/res.status.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-207] File: test/res.type.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/res.type.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-208] File: test/res.vary.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/res.vary.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-209] File: test/Route.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/Route.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-210] File: test/Router.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/Router.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-211] File: test/support/env.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/support/env.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-212] File: test/support/tmpl.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/support/tmpl.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-213] File: test/support/utils.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/support/utils.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-214] File: test/utils.js</h3>
+<ul>
+<li><strong>Kind:</strong> file</li>
+<li><strong>Source:</strong> inventory | path: test/utils.js</li>
+<li><strong>Tags:</strong> lang:javascript<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<h3>[obs-259] [package_managers.dependabot.dependabot-missing-cooldown.dependabot-missing-cooldown] This Dependabot configuration does not set a cooldown period. Newly published packages can be malicious or unstable. Add a <code>cooldown</code> block with <code>default-days: 7</code> to each <code>package-ecosystem</code> entry under <code>updates</code> to wait 7 days before proposing updates to newly published package versions. Reference: <a href="https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-depe">https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-depe</a></h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: .github/dependabot.yml | line 3</li>
+<li><strong>Tags:</strong> severity:MEDIUM<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-260] [package_managers.dependabot.dependabot-missing-cooldown.dependabot-missing-cooldown] This Dependabot configuration does not set a cooldown period. Newly published packages can be malicious or unstable. Add a <code>cooldown</code> block with <code>default-days: 7</code> to each <code>package-ecosystem</code> entry under <code>updates</code> to wait 7 days before proposing updates to newly published package versions. Reference: <a href="https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-depe">https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-depe</a></h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: .github/dependabot.yml | line 12</li>
+<li><strong>Tags:</strong> severity:MEDIUM<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-261] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-default-name] Don’t use the default session cookie name Using the default session cookie name can open your app to attacks. The security issue posed is similar to X-Powered-By: a potential attacker can use it to fingerprint the server and target attacks accordingly.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/auth/index.js | line 22</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-262] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-domain] Default session middleware settings: <code>domain</code> not set. It indicates the domain of the cookie; use it to compare against the domain of the server in which the URL is being requested. If they match, then check the path attribute next.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/auth/index.js | line 22</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-263] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-expires] Default session middleware settings: <code>expires</code> not set. Use it to set expiration date for persistent cookies.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/auth/index.js | line 22</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-264] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-httponly] Default session middleware settings: <code>httpOnly</code> not set. It ensures the cookie is sent only over HTTP(S), not client JavaScript, helping to protect against cross-site scripting attacks.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/auth/index.js | line 22</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-265] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-path] Default session middleware settings: <code>path</code> not set. It indicates the path of the cookie; use it to compare against the request path. If this and domain match, then send the cookie in the request.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/auth/index.js | line 22</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-266] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-secure] Default session middleware settings: <code>secure</code> not set. It ensures the browser only sends the cookie over HTTPS.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/auth/index.js | line 22</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-267] [javascript.express.security.audit.express-session-hardcoded-secret.express-session-hardcoded-secret] A hard-coded credential was detected. It is not recommended to store credentials in source-code, as this risks secrets being leaked and used by either an internal or external malicious adversary. It is recommended to use environment variables to securely provide credentials or retrieve credentials from a secure vault or HSM (Hardware Security Module).</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/auth/index.js | line 25</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-268] [javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape] Detected an explicit unescape in an EJS template, using &#39;&lt;%- ... %&gt;&#39; If external data can reach these locations, your application is exposed to a cross-site scripting (XSS) vulnerability. Use &#39;&lt;%= ... %&gt;&#39; to escape this data. If you need escaping, ensure no external data can reach this location.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/auth/views/login.ejs | line 5</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-269] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-default-name] Don’t use the default session cookie name Using the default session cookie name can open your app to attacks. The security issue posed is similar to X-Powered-By: a potential attacker can use it to fingerprint the server and target attacks accordingly.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/cookie-sessions/index.js | line 13</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-270] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-domain] Default session middleware settings: <code>domain</code> not set. It indicates the domain of the cookie; use it to compare against the domain of the server in which the URL is being requested. If they match, then check the path attribute next.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/cookie-sessions/index.js | line 13</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-271] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-expires] Default session middleware settings: <code>expires</code> not set. Use it to set expiration date for persistent cookies.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/cookie-sessions/index.js | line 13</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-272] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-httponly] Default session middleware settings: <code>httpOnly</code> not set. It ensures the cookie is sent only over HTTP(S), not client JavaScript, helping to protect against cross-site scripting attacks.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/cookie-sessions/index.js | line 13</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-273] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-path] Default session middleware settings: <code>path</code> not set. It indicates the path of the cookie; use it to compare against the request path. If this and domain match, then send the cookie in the request.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/cookie-sessions/index.js | line 13</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-274] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-secure] Default session middleware settings: <code>secure</code> not set. It ensures the browser only sends the cookie over HTTPS.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/cookie-sessions/index.js | line 13</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-275] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-default-name] Don’t use the default session cookie name Using the default session cookie name can open your app to attacks. The security issue posed is similar to X-Powered-By: a potential attacker can use it to fingerprint the server and target attacks accordingly.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/mvc/index.js | line 40</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-276] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-domain] Default session middleware settings: <code>domain</code> not set. It indicates the domain of the cookie; use it to compare against the domain of the server in which the URL is being requested. If they match, then check the path attribute next.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/mvc/index.js | line 40</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-277] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-expires] Default session middleware settings: <code>expires</code> not set. Use it to set expiration date for persistent cookies.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/mvc/index.js | line 40</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-278] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-httponly] Default session middleware settings: <code>httpOnly</code> not set. It ensures the cookie is sent only over HTTP(S), not client JavaScript, helping to protect against cross-site scripting attacks.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/mvc/index.js | line 40</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-279] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-path] Default session middleware settings: <code>path</code> not set. It indicates the path of the cookie; use it to compare against the request path. If this and domain match, then send the cookie in the request.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/mvc/index.js | line 40</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-280] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-secure] Default session middleware settings: <code>secure</code> not set. It ensures the browser only sends the cookie over HTTPS.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/mvc/index.js | line 40</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-281] [javascript.express.security.audit.express-session-hardcoded-secret.express-session-hardcoded-secret] A hard-coded credential was detected. It is not recommended to store credentials in source-code, as this risks secrets being leaked and used by either an internal or external malicious adversary. It is recommended to use environment variables to securely provide credentials or retrieve credentials from a secure vault or HSM (Hardware Security Module).</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/mvc/index.js | line 43</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-282] [javascript.express.security.audit.xss.direct-response-write.direct-response-write] Detected directly writing to a Response object from user-defined input. This bypasses any HTML escaping and may expose your application to a Cross-Site-scripting (XSS) vulnerability. Instead, use &#39;resp.render()&#39; to render safely escaped HTML.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/params/index.js | line 67</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-283] [javascript.express.security.audit.xss.direct-response-write.direct-response-write] Detected directly writing to a Response object from user-defined input. This bypasses any HTML escaping and may expose your application to a Cross-Site-scripting (XSS) vulnerability. Instead, use &#39;resp.render()&#39; to render safely escaped HTML.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/resource/index.js | line 46</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-284] [javascript.express.security.audit.xss.direct-response-write.direct-response-write] Detected directly writing to a Response object from user-defined input. This bypasses any HTML escaping and may expose your application to a Cross-Site-scripting (XSS) vulnerability. Instead, use &#39;resp.render()&#39; to render safely escaped HTML.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/route-map/index.js | line 37</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-285] [javascript.express.security.audit.xss.direct-response-write.direct-response-write] Detected directly writing to a Response object from user-defined input. This bypasses any HTML escaping and may expose your application to a Cross-Site-scripting (XSS) vulnerability. Instead, use &#39;resp.render()&#39; to render safely escaped HTML.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/route-map/index.js | line 47</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-286] [javascript.express.security.audit.xss.direct-response-write.direct-response-write] Detected directly writing to a Response object from user-defined input. This bypasses any HTML escaping and may expose your application to a Cross-Site-scripting (XSS) vulnerability. Instead, use &#39;resp.render()&#39; to render safely escaped HTML.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/route-map/index.js | line 51</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-287] [javascript.lang.security.audit.unsafe-formatstring.unsafe-formatstring] Detected string concatenation with a non-literal variable in a util.format / console.log function. If an attacker injects a format specifier in the string, it will forge the log message. Try to use constant values for the format string.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/search/index.js | line 57</li>
+<li><strong>Tags:</strong> severity:INFO<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-288] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-default-name] Don’t use the default session cookie name Using the default session cookie name can open your app to attacks. The security issue posed is similar to X-Powered-By: a potential attacker can use it to fingerprint the server and target attacks accordingly.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/session/index.js | line 16</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-289] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-domain] Default session middleware settings: <code>domain</code> not set. It indicates the domain of the cookie; use it to compare against the domain of the server in which the URL is being requested. If they match, then check the path attribute next.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/session/index.js | line 16</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-290] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-expires] Default session middleware settings: <code>expires</code> not set. Use it to set expiration date for persistent cookies.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/session/index.js | line 16</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-291] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-httponly] Default session middleware settings: <code>httpOnly</code> not set. It ensures the cookie is sent only over HTTP(S), not client JavaScript, helping to protect against cross-site scripting attacks.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/session/index.js | line 16</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-292] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-path] Default session middleware settings: <code>path</code> not set. It indicates the path of the cookie; use it to compare against the request path. If this and domain match, then send the cookie in the request.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/session/index.js | line 16</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-293] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-secure] Default session middleware settings: <code>secure</code> not set. It ensures the browser only sends the cookie over HTTPS.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/session/index.js | line 16</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-294] [javascript.express.security.audit.express-session-hardcoded-secret.express-session-hardcoded-secret] A hard-coded credential was detected. It is not recommended to store credentials in source-code, as this risks secrets being leaked and used by either an internal or external malicious adversary. It is recommended to use environment variables to securely provide credentials or retrieve credentials from a secure vault or HSM (Hardware Security Module).</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/session/index.js | line 19</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-295] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-default-name] Don’t use the default session cookie name Using the default session cookie name can open your app to attacks. The security issue posed is similar to X-Powered-By: a potential attacker can use it to fingerprint the server and target attacks accordingly.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/session/redis.js | line 20</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-296] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-domain] Default session middleware settings: <code>domain</code> not set. It indicates the domain of the cookie; use it to compare against the domain of the server in which the URL is being requested. If they match, then check the path attribute next.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/session/redis.js | line 20</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-297] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-expires] Default session middleware settings: <code>expires</code> not set. Use it to set expiration date for persistent cookies.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/session/redis.js | line 20</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-298] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-httponly] Default session middleware settings: <code>httpOnly</code> not set. It ensures the cookie is sent only over HTTP(S), not client JavaScript, helping to protect against cross-site scripting attacks.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/session/redis.js | line 20</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-299] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-path] Default session middleware settings: <code>path</code> not set. It indicates the path of the cookie; use it to compare against the request path. If this and domain match, then send the cookie in the request.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/session/redis.js | line 20</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-300] [javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-secure] Default session middleware settings: <code>secure</code> not set. It ensures the browser only sends the cookie over HTTPS.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/session/redis.js | line 20</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-301] [javascript.express.security.audit.express-session-hardcoded-secret.express-session-hardcoded-secret] A hard-coded credential was detected. It is not recommended to store credentials in source-code, as this risks secrets being leaked and used by either an internal or external malicious adversary. It is recommended to use environment variables to securely provide credentials or retrieve credentials from a secure vault or HSM (Hardware Security Module).</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/session/redis.js | line 23</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-302] [javascript.express.security.audit.xss.direct-response-write.direct-response-write] Detected directly writing to a Response object from user-defined input. This bypasses any HTML escaping and may expose your application to a Cross-Site-scripting (XSS) vulnerability. Instead, use &#39;resp.render()&#39; to render safely escaped HTML.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/vhost/index.js | line 30</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h3>[obs-303] [javascript.express.security.audit.xss.direct-response-write.direct-response-write] Detected directly writing to a Response object from user-defined input. This bypasses any HTML escaping and may expose your application to a Cross-Site-scripting (XSS) vulnerability. Instead, use &#39;resp.render()&#39; to render safely escaped HTML.</h3>
+<ul>
+<li><strong>Kind:</strong> finding</li>
+<li><strong>Source:</strong> semgrep | path: examples/web-service/index.js | line 89</li>
+<li><strong>Tags:</strong> severity:WARNING<blockquote>
+<p><span class="badge-observed">Observed</span></p>
+</blockquote>
+</li>
+</ul>
+<pre><code>requires login
+</code></pre>
+<h2>Justified Inferences</h2>
+<h3>[inf-001] Project appears to be a web server</h3>
+<blockquote>
+<p><span class="badge-inferred">Inferred</span> | Confidence: medium</p>
+</blockquote>
+<p><strong>Explanation:</strong> Two or more entry-point files were found alongside an HTTP framework dependency.</p>
+<p><strong>Supporting evidence:</strong> obs-012, obs-017, obs-249</p>
+<h2>Dependencies &amp; Risks</h2>
+<h3>accepts@^2.0.0 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> accepts@^2.0.0 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-215]</li>
+</ul>
+<h3>body-parser@^2.3.0 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> body-parser@^2.3.0 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-216]</li>
+</ul>
+<h3>content-disposition@^2.0.1 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> content-disposition@^2.0.1 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-217]</li>
+</ul>
+<h3>content-type@^2.0.0 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> content-type@^2.0.0 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-218]</li>
+</ul>
+<h3>cookie@^0.7.1 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> cookie@^0.7.1 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-219]</li>
+</ul>
+<h3>cookie-signature@^1.2.1 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> cookie-signature@^1.2.1 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-220]</li>
+</ul>
+<h3>debug@^4.4.0 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> debug@^4.4.0 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-221]</li>
+</ul>
+<h3>depd@^2.0.0 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> depd@^2.0.0 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-222]</li>
+</ul>
+<h3>encodeurl@^2.0.0 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> encodeurl@^2.0.0 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-223]</li>
+</ul>
+<h3>escape-html@^1.0.3 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> escape-html@^1.0.3 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-224]</li>
+</ul>
+<h3>etag@^1.8.1 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> etag@^1.8.1 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-225]</li>
+</ul>
+<h3>finalhandler@^2.1.0 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> finalhandler@^2.1.0 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-226]</li>
+</ul>
+<h3>fresh@^2.0.0 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> fresh@^2.0.0 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-227]</li>
+</ul>
+<h3>http-errors@^2.0.0 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> http-errors@^2.0.0 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-228]</li>
+</ul>
+<h3>merge-descriptors@^2.0.0 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> merge-descriptors@^2.0.0 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-229]</li>
+</ul>
+<h3>mime-types@^3.0.0 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> mime-types@^3.0.0 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-230]</li>
+</ul>
+<h3>on-finished@^2.4.1 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> on-finished@^2.4.1 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-231]</li>
+</ul>
+<h3>once@^1.4.0 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> once@^1.4.0 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-232]</li>
+</ul>
+<h3>parseurl@^1.3.3 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> parseurl@^1.3.3 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-233]</li>
+</ul>
+<h3>proxy-addr@^2.0.7 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> proxy-addr@^2.0.7 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-234]</li>
+</ul>
+<h3>qs@^6.15.2 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> qs@^6.15.2 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-235]</li>
+</ul>
+<h3>range-parser@^1.2.1 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> range-parser@^1.2.1 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-236]</li>
+</ul>
+<h3>router@^2.2.0 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> router@^2.2.0 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-237]</li>
+</ul>
+<h3>send@^1.1.0 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> send@^1.1.0 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-238]</li>
+</ul>
+<h3>serve-static@^2.2.0 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> serve-static@^2.2.0 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-239]</li>
+</ul>
+<h3>statuses@^2.0.1 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> statuses@^2.0.1 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-240]</li>
+</ul>
+<h3>type-is@^2.1.0 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> type-is@^2.1.0 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-241]</li>
+</ul>
+<h3>vary@^1.1.2 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> vary@^1.1.2 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-242]</li>
+</ul>
+<h3><a href="mailto:after@0.8.2">after@0.8.2</a> (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> <a href="mailto:after@0.8.2">after@0.8.2</a> (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-243]</li>
+</ul>
+<h3>connect-redis@^8.0.1 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> connect-redis@^8.0.1 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-244]</li>
+</ul>
+<h3><a href="mailto:cookie-parser@1.4.7">cookie-parser@1.4.7</a> (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> <a href="mailto:cookie-parser@1.4.7">cookie-parser@1.4.7</a> (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-245]</li>
+</ul>
+<h3><a href="mailto:cookie-session@2.1.1">cookie-session@2.1.1</a> (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> <a href="mailto:cookie-session@2.1.1">cookie-session@2.1.1</a> (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-246]</li>
+</ul>
+<h3>ejs@^3.1.10 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> ejs@^3.1.10 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-247]</li>
+</ul>
+<h3><a href="mailto:eslint@8.47.0">eslint@8.47.0</a> (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> <a href="mailto:eslint@8.47.0">eslint@8.47.0</a> (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-248]</li>
+</ul>
+<h3>express-session@^1.18.1 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> express-session@^1.18.1 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-249]</li>
+</ul>
+<h3><a href="mailto:hbs@4.3.0">hbs@4.3.0</a> (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> <a href="mailto:hbs@4.3.0">hbs@4.3.0</a> (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-250]</li>
+</ul>
+<h3>marked@^15.0.3 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> marked@^15.0.3 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-251]</li>
+</ul>
+<h3><a href="mailto:method-override@3.0.0">method-override@3.0.0</a> (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> <a href="mailto:method-override@3.0.0">method-override@3.0.0</a> (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-252]</li>
+</ul>
+<h3>mocha@^11.7.5 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> mocha@^11.7.5 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-253]</li>
+</ul>
+<h3><a href="mailto:morgan@1.12.0">morgan@1.12.0</a> (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> <a href="mailto:morgan@1.12.0">morgan@1.12.0</a> (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-254]</li>
+</ul>
+<h3>nyc@^17.1.0 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> nyc@^17.1.0 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-255]</li>
+</ul>
+<h3><a href="mailto:pbkdf2-password@1.2.1">pbkdf2-password@1.2.1</a> (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> <a href="mailto:pbkdf2-password@1.2.1">pbkdf2-password@1.2.1</a> (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-256]</li>
+</ul>
+<h3>supertest@^6.3.0 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> supertest@^6.3.0 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-257]</li>
+</ul>
+<h3>vhost@~3.0.2 (from package.json)</h3>
+<ul>
+<li><strong>Advisory:</strong> —</li>
+<li><strong>Summary:</strong> vhost@~3.0.2 (from package.json)</li>
+<li><strong>Severity tag:</strong> manifest:package.json</li>
+<li><span class="badge-finding">Finding for review</span> — this tool result requires manual confirmation.
+See: inventory output reference [obs-258]</li>
+</ul>
+<h2>Limitations</h2>
+<ul>
+<li>Static analysis only. No code was executed during this analysis.</li>
+<li>Ghidra pseudocode is a decompiler approximation and does not represent original source code.</li>
+<li>Semgrep rule coverage is limited to the rulesets active at scan time.</li>
+<li>Trivy vulnerability data reflects the database version dated unknown.</li>
+<li>A finding from a scanner does not confirm a vulnerability is exploitable.</li>
+<li>Strings and imports indicate capability, not confirmed use.</li>
+<li>This report was generated automatically and requires human review for any security or compliance decision.</li>
+</ul>
+<h2>Appendix: Evidence Index</h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Kind</th>
+<th>Summary</th>
+<th>Tool</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>obs-001</td>
+<td>file</td>
+<td>File: .editorconfig</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-002</td>
+<td>file</td>
+<td>File: .eslintignore</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-003</td>
+<td>file</td>
+<td>File: .eslintrc.yml</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-004</td>
+<td>file</td>
+<td>File: .github/dependabot.yml</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-005</td>
+<td>file</td>
+<td>File: .github/workflows/ci.yml</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-006</td>
+<td>file</td>
+<td>File: .github/workflows/codeql.yml</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-007</td>
+<td>file</td>
+<td>File: .github/workflows/legacy.yml</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-008</td>
+<td>file</td>
+<td>File: .github/workflows/npm-publish.yml</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-009</td>
+<td>file</td>
+<td>File: .github/workflows/scorecard.yml</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-010</td>
+<td>file</td>
+<td>File: .gitignore</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-011</td>
+<td>file</td>
+<td>File: .npmrc</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-012</td>
+<td>file</td>
+<td>File: examples/auth/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-013</td>
+<td>file</td>
+<td>File: examples/auth/views/foot.ejs</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-014</td>
+<td>file</td>
+<td>File: examples/auth/views/head.ejs</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-015</td>
+<td>file</td>
+<td>File: examples/auth/views/login.ejs</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-016</td>
+<td>file</td>
+<td>File: examples/content-negotiation/db.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-017</td>
+<td>file</td>
+<td>File: examples/content-negotiation/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-018</td>
+<td>file</td>
+<td>File: examples/content-negotiation/users.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-019</td>
+<td>file</td>
+<td>File: examples/cookie-sessions/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-020</td>
+<td>file</td>
+<td>File: examples/cookies/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-021</td>
+<td>file</td>
+<td>File: examples/downloads/files/amazing.txt</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-022</td>
+<td>file</td>
+<td>File: examples/downloads/files/CCTV大赛上海分赛区.txt</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-023</td>
+<td>file</td>
+<td>File: examples/downloads/files/notes/groceries.txt</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-024</td>
+<td>file</td>
+<td>File: examples/downloads/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-025</td>
+<td>file</td>
+<td>File: examples/ejs/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-026</td>
+<td>file</td>
+<td>File: examples/ejs/public/stylesheets/style.css</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-027</td>
+<td>file</td>
+<td>File: examples/ejs/views/footer.html</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-028</td>
+<td>file</td>
+<td>File: examples/ejs/views/header.html</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-029</td>
+<td>file</td>
+<td>File: examples/ejs/views/users.html</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-030</td>
+<td>file</td>
+<td>File: examples/error/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-031</td>
+<td>file</td>
+<td>File: examples/error-pages/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-032</td>
+<td>file</td>
+<td>File: examples/error-pages/views/404.ejs</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-033</td>
+<td>file</td>
+<td>File: examples/error-pages/views/500.ejs</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-034</td>
+<td>file</td>
+<td>File: examples/error-pages/views/error_header.ejs</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-035</td>
+<td>file</td>
+<td>File: examples/error-pages/views/footer.ejs</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-036</td>
+<td>file</td>
+<td>File: examples/error-pages/views/index.ejs</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-037</td>
+<td>file</td>
+<td>File: examples/hello-world/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-038</td>
+<td>file</td>
+<td>File: examples/markdown/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-039</td>
+<td>file</td>
+<td>File: examples/markdown/views/index.md</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-040</td>
+<td>file</td>
+<td>File: examples/multi-router/controllers/api_v1.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-041</td>
+<td>file</td>
+<td>File: examples/multi-router/controllers/api_v2.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-042</td>
+<td>file</td>
+<td>File: examples/multi-router/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-043</td>
+<td>file</td>
+<td>File: examples/mvc/controllers/main/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-044</td>
+<td>file</td>
+<td>File: examples/mvc/controllers/pet/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-045</td>
+<td>file</td>
+<td>File: examples/mvc/controllers/pet/views/edit.ejs</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-046</td>
+<td>file</td>
+<td>File: examples/mvc/controllers/pet/views/show.ejs</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-047</td>
+<td>file</td>
+<td>File: examples/mvc/controllers/user/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-048</td>
+<td>file</td>
+<td>File: examples/mvc/controllers/user/views/edit.hbs</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-049</td>
+<td>file</td>
+<td>File: examples/mvc/controllers/user/views/list.hbs</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-050</td>
+<td>file</td>
+<td>File: examples/mvc/controllers/user/views/show.hbs</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-051</td>
+<td>file</td>
+<td>File: examples/mvc/controllers/user-pet/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-052</td>
+<td>file</td>
+<td>File: examples/mvc/db.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-053</td>
+<td>file</td>
+<td>File: examples/mvc/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-054</td>
+<td>file</td>
+<td>File: examples/mvc/lib/boot.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-055</td>
+<td>file</td>
+<td>File: examples/mvc/public/style.css</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-056</td>
+<td>file</td>
+<td>File: examples/mvc/views/404.ejs</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-057</td>
+<td>file</td>
+<td>File: examples/mvc/views/5xx.ejs</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-058</td>
+<td>file</td>
+<td>File: examples/online/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-059</td>
+<td>file</td>
+<td>File: examples/params/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-060</td>
+<td>file</td>
+<td>File: examples/README.md</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-061</td>
+<td>file</td>
+<td>File: examples/resource/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-062</td>
+<td>file</td>
+<td>File: examples/route-map/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-063</td>
+<td>file</td>
+<td>File: examples/route-middleware/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-064</td>
+<td>file</td>
+<td>File: examples/route-separation/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-065</td>
+<td>file</td>
+<td>File: examples/route-separation/post.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-066</td>
+<td>file</td>
+<td>File: examples/route-separation/public/style.css</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-067</td>
+<td>file</td>
+<td>File: examples/route-separation/site.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-068</td>
+<td>file</td>
+<td>File: examples/route-separation/user.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-069</td>
+<td>file</td>
+<td>File: examples/route-separation/views/footer.ejs</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-070</td>
+<td>file</td>
+<td>File: examples/route-separation/views/header.ejs</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-071</td>
+<td>file</td>
+<td>File: examples/route-separation/views/index.ejs</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-072</td>
+<td>file</td>
+<td>File: examples/route-separation/views/posts/index.ejs</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-073</td>
+<td>file</td>
+<td>File: examples/route-separation/views/users/edit.ejs</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-074</td>
+<td>file</td>
+<td>File: examples/route-separation/views/users/index.ejs</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-075</td>
+<td>file</td>
+<td>File: examples/route-separation/views/users/view.ejs</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-076</td>
+<td>file</td>
+<td>File: examples/search/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-077</td>
+<td>file</td>
+<td>File: examples/search/public/client.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-078</td>
+<td>file</td>
+<td>File: examples/search/public/index.html</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-079</td>
+<td>file</td>
+<td>File: examples/session/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-080</td>
+<td>file</td>
+<td>File: examples/session/redis.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-081</td>
+<td>file</td>
+<td>File: examples/static-files/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-082</td>
+<td>file</td>
+<td>File: examples/static-files/public/css/style.css</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-083</td>
+<td>file</td>
+<td>File: examples/static-files/public/hello.txt</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-084</td>
+<td>file</td>
+<td>File: examples/static-files/public/js/app.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-085</td>
+<td>file</td>
+<td>File: examples/vhost/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-086</td>
+<td>file</td>
+<td>File: examples/view-constructor/github-view.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-087</td>
+<td>file</td>
+<td>File: examples/view-constructor/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-088</td>
+<td>file</td>
+<td>File: examples/view-locals/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-089</td>
+<td>file</td>
+<td>File: examples/view-locals/user.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-090</td>
+<td>file</td>
+<td>File: examples/view-locals/views/index.ejs</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-091</td>
+<td>file</td>
+<td>File: examples/web-service/index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-092</td>
+<td>file</td>
+<td>File: History.md</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-093</td>
+<td>file</td>
+<td>File: index.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-094</td>
+<td>file</td>
+<td>File: lib/application.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-095</td>
+<td>file</td>
+<td>File: lib/express.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-096</td>
+<td>file</td>
+<td>File: lib/request.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-097</td>
+<td>file</td>
+<td>File: lib/response.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-098</td>
+<td>file</td>
+<td>File: lib/utils.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-099</td>
+<td>file</td>
+<td>File: lib/view.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-100</td>
+<td>file</td>
+<td>File: LICENSE</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-101</td>
+<td>file</td>
+<td>File: package.json</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-102</td>
+<td>file</td>
+<td>File: Readme.md</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-103</td>
+<td>file</td>
+<td>File: test/acceptance/auth.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-104</td>
+<td>file</td>
+<td>File: test/acceptance/content-negotiation.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-105</td>
+<td>file</td>
+<td>File: test/acceptance/cookie-sessions.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-106</td>
+<td>file</td>
+<td>File: test/acceptance/cookies.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-107</td>
+<td>file</td>
+<td>File: test/acceptance/downloads.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-108</td>
+<td>file</td>
+<td>File: test/acceptance/ejs.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-109</td>
+<td>file</td>
+<td>File: test/acceptance/error-pages.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-110</td>
+<td>file</td>
+<td>File: test/acceptance/error.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-111</td>
+<td>file</td>
+<td>File: test/acceptance/hello-world.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-112</td>
+<td>file</td>
+<td>File: test/acceptance/markdown.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-113</td>
+<td>file</td>
+<td>File: test/acceptance/multi-router.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-114</td>
+<td>file</td>
+<td>File: test/acceptance/mvc.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-115</td>
+<td>file</td>
+<td>File: test/acceptance/params.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-116</td>
+<td>file</td>
+<td>File: test/acceptance/resource.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-117</td>
+<td>file</td>
+<td>File: test/acceptance/route-map.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-118</td>
+<td>file</td>
+<td>File: test/acceptance/route-separation.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-119</td>
+<td>file</td>
+<td>File: test/acceptance/vhost.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-120</td>
+<td>file</td>
+<td>File: test/acceptance/web-service.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-121</td>
+<td>file</td>
+<td>File: test/app.all.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-122</td>
+<td>file</td>
+<td>File: test/app.engine.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-123</td>
+<td>file</td>
+<td>File: test/app.head.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-124</td>
+<td>file</td>
+<td>File: test/app.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-125</td>
+<td>file</td>
+<td>File: test/app.listen.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-126</td>
+<td>file</td>
+<td>File: test/app.locals.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-127</td>
+<td>file</td>
+<td>File: test/app.options.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-128</td>
+<td>file</td>
+<td>File: test/app.param.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-129</td>
+<td>file</td>
+<td>File: test/app.render.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-130</td>
+<td>file</td>
+<td>File: test/app.request.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-131</td>
+<td>file</td>
+<td>File: test/app.response.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-132</td>
+<td>file</td>
+<td>File: test/app.route.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-133</td>
+<td>file</td>
+<td>File: test/app.router.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-134</td>
+<td>file</td>
+<td>File: test/app.routes.error.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-135</td>
+<td>file</td>
+<td>File: test/app.use.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-136</td>
+<td>file</td>
+<td>File: test/config.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-137</td>
+<td>file</td>
+<td>File: test/exports.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-138</td>
+<td>file</td>
+<td>File: test/express.json.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-139</td>
+<td>file</td>
+<td>File: test/express.raw.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-140</td>
+<td>file</td>
+<td>File: test/express.static.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-141</td>
+<td>file</td>
+<td>File: test/express.text.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-142</td>
+<td>file</td>
+<td>File: test/express.urlencoded.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-143</td>
+<td>file</td>
+<td>File: test/fixtures/% of dogs.txt</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-144</td>
+<td>file</td>
+<td>File: test/fixtures/.name</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-145</td>
+<td>file</td>
+<td>File: test/fixtures/blog/index.html</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-146</td>
+<td>file</td>
+<td>File: test/fixtures/blog/post/index.tmpl</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-147</td>
+<td>file</td>
+<td>File: test/fixtures/broken.send</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-148</td>
+<td>file</td>
+<td>File: test/fixtures/default_layout/name.tmpl</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-149</td>
+<td>file</td>
+<td>File: test/fixtures/default_layout/user.tmpl</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-150</td>
+<td>file</td>
+<td>File: test/fixtures/email.tmpl</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-151</td>
+<td>file</td>
+<td>File: test/fixtures/empty.txt</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-152</td>
+<td>file</td>
+<td>File: test/fixtures/local_layout/user.tmpl</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-153</td>
+<td>file</td>
+<td>File: test/fixtures/name.tmpl</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-154</td>
+<td>file</td>
+<td>File: test/fixtures/name.txt</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-155</td>
+<td>file</td>
+<td>File: test/fixtures/nums.txt</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-156</td>
+<td>file</td>
+<td>File: test/fixtures/pets/names.txt</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-157</td>
+<td>file</td>
+<td>File: test/fixtures/snow ☃/.gitkeep</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-158</td>
+<td>file</td>
+<td>File: test/fixtures/todo.html</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-159</td>
+<td>file</td>
+<td>File: test/fixtures/todo.txt</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-160</td>
+<td>file</td>
+<td>File: test/fixtures/user.html</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-161</td>
+<td>file</td>
+<td>File: test/fixtures/user.tmpl</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-162</td>
+<td>file</td>
+<td>File: test/fixtures/users/index.html</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-163</td>
+<td>file</td>
+<td>File: test/fixtures/users/tobi.txt</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-164</td>
+<td>file</td>
+<td>File: test/middleware.basic.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-165</td>
+<td>file</td>
+<td>File: test/regression.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-166</td>
+<td>file</td>
+<td>File: test/req.accepts.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-167</td>
+<td>file</td>
+<td>File: test/req.acceptsCharsets.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-168</td>
+<td>file</td>
+<td>File: test/req.acceptsEncodings.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-169</td>
+<td>file</td>
+<td>File: test/req.acceptsLanguages.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-170</td>
+<td>file</td>
+<td>File: test/req.baseUrl.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-171</td>
+<td>file</td>
+<td>File: test/req.fresh.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-172</td>
+<td>file</td>
+<td>File: test/req.get.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-173</td>
+<td>file</td>
+<td>File: test/req.host.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-174</td>
+<td>file</td>
+<td>File: test/req.hostname.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-175</td>
+<td>file</td>
+<td>File: test/req.ip.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-176</td>
+<td>file</td>
+<td>File: test/req.ips.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-177</td>
+<td>file</td>
+<td>File: test/req.is.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-178</td>
+<td>file</td>
+<td>File: test/req.path.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-179</td>
+<td>file</td>
+<td>File: test/req.protocol.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-180</td>
+<td>file</td>
+<td>File: test/req.query.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-181</td>
+<td>file</td>
+<td>File: test/req.range.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-182</td>
+<td>file</td>
+<td>File: test/req.route.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-183</td>
+<td>file</td>
+<td>File: test/req.secure.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-184</td>
+<td>file</td>
+<td>File: test/req.signedCookies.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-185</td>
+<td>file</td>
+<td>File: test/req.stale.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-186</td>
+<td>file</td>
+<td>File: test/req.subdomains.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-187</td>
+<td>file</td>
+<td>File: test/req.xhr.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-188</td>
+<td>file</td>
+<td>File: test/res.append.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-189</td>
+<td>file</td>
+<td>File: test/res.attachment.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-190</td>
+<td>file</td>
+<td>File: test/res.clearCookie.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-191</td>
+<td>file</td>
+<td>File: test/res.cookie.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-192</td>
+<td>file</td>
+<td>File: test/res.download.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-193</td>
+<td>file</td>
+<td>File: test/res.format.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-194</td>
+<td>file</td>
+<td>File: test/res.get.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-195</td>
+<td>file</td>
+<td>File: test/res.json.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-196</td>
+<td>file</td>
+<td>File: test/res.jsonp.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-197</td>
+<td>file</td>
+<td>File: test/res.links.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-198</td>
+<td>file</td>
+<td>File: test/res.locals.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-199</td>
+<td>file</td>
+<td>File: test/res.location.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-200</td>
+<td>file</td>
+<td>File: test/res.redirect.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-201</td>
+<td>file</td>
+<td>File: test/res.render.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-202</td>
+<td>file</td>
+<td>File: test/res.send.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-203</td>
+<td>file</td>
+<td>File: test/res.sendFile.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-204</td>
+<td>file</td>
+<td>File: test/res.sendStatus.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-205</td>
+<td>file</td>
+<td>File: test/res.set.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-206</td>
+<td>file</td>
+<td>File: test/res.status.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-207</td>
+<td>file</td>
+<td>File: test/res.type.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-208</td>
+<td>file</td>
+<td>File: test/res.vary.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-209</td>
+<td>file</td>
+<td>File: test/Route.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-210</td>
+<td>file</td>
+<td>File: test/Router.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-211</td>
+<td>file</td>
+<td>File: test/support/env.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-212</td>
+<td>file</td>
+<td>File: test/support/tmpl.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-213</td>
+<td>file</td>
+<td>File: test/support/utils.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-214</td>
+<td>file</td>
+<td>File: test/utils.js</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-215</td>
+<td>dependency</td>
+<td>accepts@^2.0.0 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-216</td>
+<td>dependency</td>
+<td>body-parser@^2.3.0 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-217</td>
+<td>dependency</td>
+<td>content-disposition@^2.0.1 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-218</td>
+<td>dependency</td>
+<td>content-type@^2.0.0 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-219</td>
+<td>dependency</td>
+<td>cookie@^0.7.1 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-220</td>
+<td>dependency</td>
+<td>cookie-signature@^1.2.1 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-221</td>
+<td>dependency</td>
+<td>debug@^4.4.0 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-222</td>
+<td>dependency</td>
+<td>depd@^2.0.0 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-223</td>
+<td>dependency</td>
+<td>encodeurl@^2.0.0 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-224</td>
+<td>dependency</td>
+<td>escape-html@^1.0.3 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-225</td>
+<td>dependency</td>
+<td>etag@^1.8.1 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-226</td>
+<td>dependency</td>
+<td>finalhandler@^2.1.0 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-227</td>
+<td>dependency</td>
+<td>fresh@^2.0.0 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-228</td>
+<td>dependency</td>
+<td>http-errors@^2.0.0 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-229</td>
+<td>dependency</td>
+<td>merge-descriptors@^2.0.0 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-230</td>
+<td>dependency</td>
+<td>mime-types@^3.0.0 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-231</td>
+<td>dependency</td>
+<td>on-finished@^2.4.1 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-232</td>
+<td>dependency</td>
+<td>once@^1.4.0 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-233</td>
+<td>dependency</td>
+<td>parseurl@^1.3.3 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-234</td>
+<td>dependency</td>
+<td>proxy-addr@^2.0.7 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-235</td>
+<td>dependency</td>
+<td>qs@^6.15.2 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-236</td>
+<td>dependency</td>
+<td>range-parser@^1.2.1 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-237</td>
+<td>dependency</td>
+<td>router@^2.2.0 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-238</td>
+<td>dependency</td>
+<td>send@^1.1.0 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-239</td>
+<td>dependency</td>
+<td>serve-static@^2.2.0 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-240</td>
+<td>dependency</td>
+<td>statuses@^2.0.1 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-241</td>
+<td>dependency</td>
+<td>type-is@^2.1.0 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-242</td>
+<td>dependency</td>
+<td>vary@^1.1.2 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-243</td>
+<td>dependency</td>
+<td><a href="mailto:after@0.8.2">after@0.8.2</a> (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-244</td>
+<td>dependency</td>
+<td>connect-redis@^8.0.1 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-245</td>
+<td>dependency</td>
+<td><a href="mailto:cookie-parser@1.4.7">cookie-parser@1.4.7</a> (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-246</td>
+<td>dependency</td>
+<td><a href="mailto:cookie-session@2.1.1">cookie-session@2.1.1</a> (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-247</td>
+<td>dependency</td>
+<td>ejs@^3.1.10 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-248</td>
+<td>dependency</td>
+<td><a href="mailto:eslint@8.47.0">eslint@8.47.0</a> (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-249</td>
+<td>dependency</td>
+<td>express-session@^1.18.1 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-250</td>
+<td>dependency</td>
+<td><a href="mailto:hbs@4.3.0">hbs@4.3.0</a> (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-251</td>
+<td>dependency</td>
+<td>marked@^15.0.3 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-252</td>
+<td>dependency</td>
+<td><a href="mailto:method-override@3.0.0">method-override@3.0.0</a> (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-253</td>
+<td>dependency</td>
+<td>mocha@^11.7.5 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-254</td>
+<td>dependency</td>
+<td><a href="mailto:morgan@1.12.0">morgan@1.12.0</a> (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-255</td>
+<td>dependency</td>
+<td>nyc@^17.1.0 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-256</td>
+<td>dependency</td>
+<td><a href="mailto:pbkdf2-password@1.2.1">pbkdf2-password@1.2.1</a> (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-257</td>
+<td>dependency</td>
+<td>supertest@^6.3.0 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-258</td>
+<td>dependency</td>
+<td>vhost@~3.0.2 (from package.json)</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td>obs-259</td>
+<td>finding</td>
+<td>[package_managers.dependabot.dependabot-missing-cooldown.dep</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-260</td>
+<td>finding</td>
+<td>[package_managers.dependabot.dependabot-missing-cooldown.dep</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-261</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-262</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-263</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-264</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-265</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-266</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-267</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-session-hardcoded</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-268</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.xss.ejs.explicit-unescape</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-269</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-270</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-271</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-272</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-273</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-274</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-275</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-276</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-277</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-278</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-279</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-280</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-281</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-session-hardcoded</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-282</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.xss.direct-response-write</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-283</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.xss.direct-response-write</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-284</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.xss.direct-response-write</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-285</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.xss.direct-response-write</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-286</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.xss.direct-response-write</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-287</td>
+<td>finding</td>
+<td>[javascript.lang.security.audit.unsafe-formatstring.unsafe-f</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-288</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-289</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-290</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-291</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-292</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-293</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-294</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-session-hardcoded</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-295</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-296</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-297</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-298</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-299</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-300</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-cookie-settings.e</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-301</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.express-session-hardcoded</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-302</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.xss.direct-response-write</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>obs-303</td>
+<td>finding</td>
+<td>[javascript.express.security.audit.xss.direct-response-write</td>
+<td>semgrep</td>
+</tr>
+<tr>
+<td>inf-001</td>
+<td>inference</td>
+<td>Project appears to be a web server</td>
+<td>—</td>
+</tr>
+</tbody></table>
+
+</div>
+<footer>Made with IBM Bob</footer>
+</body>
+</html>

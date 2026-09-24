@@ -1,0 +1,47 @@
+{
+  "jobId": "9a0c39c9-c504-49a7-8d3e-1b95cfb54340",
+  "origin": "binary",
+  "status": "queued",
+  "createdAt": "2026-09-24T18:34:50.362Z",
+  "updatedAt": "2026-09-24T18:34:50.362Z",
+  "input": {
+    "name": "test.exe",
+    "sha256": "225ef09cdd35def11217bf7947cce9687fde828e7eaf83a5fc6f4c7bc9e05b5a",
+    "commit": null
+  },
+  "phases": [
+    {
+      "name": "queued",
+      "startedAt": "2026-09-24T18:34:50.362Z",
+      "endedAt": null,
+      "status": "running"
+    },
+    {
+      "name": "preparing",
+      "startedAt": null,
+      "endedAt": null,
+      "status": "pending"
+    },
+    {
+      "name": "scanning",
+      "startedAt": null,
+      "endedAt": null,
+      "status": "pending"
+    },
+    {
+      "name": "reporting",
+      "startedAt": null,
+      "endedAt": null,
+      "status": "pending"
+    },
+    {
+      "name": "completed",
+      "startedAt": null,
+      "endedAt": null,
+      "status": "pending"
+    }
+  ],
+  "warnings": [],
+  "error": null,
+  "workDir": "C:\\Users\\chess\\OneDrive\\Escritorio\\DesarrolloWeb\\Bob TEST\\api\\work\\cdbc6ecf-aae2-415f-8301-66e30d2e6d07"
+}

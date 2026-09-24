@@ -1,0 +1,52 @@
+{
+  "jobId": "e3837d35-bdf1-43fc-8a6c-cd54dae497e4",
+  "origin": "source-repository",
+  "status": "failed",
+  "createdAt": "2026-09-24T21:36:50.553Z",
+  "updatedAt": "2026-09-24T21:36:52.732Z",
+  "input": {
+    "name": "expressjs/express",
+    "sha256": null,
+    "commit": "9a34acf03cb818ff3f8bc40e44176e277a25cbb9",
+    "url": "https://github.com/expressjs/express"
+  },
+  "phases": [
+    {
+      "name": "queued",
+      "startedAt": "2026-09-24T21:36:50.554Z",
+      "endedAt": "2026-09-24T21:36:50.692Z",
+      "status": "completed"
+    },
+    {
+      "name": "preparing",
+      "startedAt": "2026-09-24T21:36:50.692Z",
+      "endedAt": "2026-09-24T21:36:50.693Z",
+      "status": "completed"
+    },
+    {
+      "name": "scanning",
+      "startedAt": "2026-09-24T21:36:50.693Z",
+      "endedAt": "2026-09-24T21:36:52.731Z",
+      "status": "failed"
+    },
+    {
+      "name": "reporting",
+      "startedAt": null,
+      "endedAt": null,
+      "status": "pending"
+    },
+    {
+      "name": "completed",
+      "startedAt": null,
+      "endedAt": null,
+      "status": "pending"
+    }
+  ],
+  "warnings": [],
+  "error": {
+    "phase": "scanning",
+    "message": "TOOL_ERROR: Both Semgrep and Trivy failed — no evidence was collected",
+    "cause": "TOOL_ERROR"
+  },
+  "workDir": "C:\\Users\\chess\\OneDrive\\Escritorio\\DesarrolloWeb\\Bob TEST\\api\\work\\c5e162cd-b2fd-4eff-a052-2f997944d88f"
+}

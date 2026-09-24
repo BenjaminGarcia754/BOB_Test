@@ -1,0 +1,48 @@
+{
+  "jobId": "62bd8966-8949-47a7-a749-dffc4dff6a83",
+  "origin": "source-repository",
+  "status": "queued",
+  "createdAt": "2026-09-24T18:32:28.695Z",
+  "updatedAt": "2026-09-24T18:32:28.695Z",
+  "input": {
+    "name": "owner/my-repo",
+    "sha256": null,
+    "commit": null,
+    "url": "https://github.com/owner/my-repo"
+  },
+  "phases": [
+    {
+      "name": "queued",
+      "startedAt": "2026-09-24T18:32:28.696Z",
+      "endedAt": null,
+      "status": "running"
+    },
+    {
+      "name": "preparing",
+      "startedAt": null,
+      "endedAt": null,
+      "status": "pending"
+    },
+    {
+      "name": "scanning",
+      "startedAt": null,
+      "endedAt": null,
+      "status": "pending"
+    },
+    {
+      "name": "reporting",
+      "startedAt": null,
+      "endedAt": null,
+      "status": "pending"
+    },
+    {
+      "name": "completed",
+      "startedAt": null,
+      "endedAt": null,
+      "status": "pending"
+    }
+  ],
+  "warnings": [],
+  "error": null,
+  "workDir": "C:\\Users\\chess\\OneDrive\\Escritorio\\DesarrolloWeb\\Bob TEST\\api\\work\\301c7d67-158c-4165-804a-92a7dc2a6a9a"
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"semgrep.d.ts","sourceRoot":"","sources":["../../../src/analysers/source/semgrep.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,WAAW,EAAE,UAAU,EAAE,MAAM,wBAAwB,CAAC;AAqBjE,wBAAsB,UAAU,CAC9B,SAAS,EAAE,MAAM,EACjB,aAAa,EAAE,MAAM,GACpB,OAAO,CAAC;IAAE,YAAY,EAAE,WAAW,EAAE,CAAC;IAAC,UAAU,EAAE,UAAU,CAAA;CAAE,CAAC,CA2ElE"}
